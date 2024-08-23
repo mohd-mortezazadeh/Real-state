@@ -1,0 +1,49 @@
+
+@font-face {
+    font-family: yekanbakh;
+    font-style: normal;
+    font-weight: 500;
+    src: url("./../public/fonts/Yekan-bakh/YEKANBAKHFANUM-MEDIUM.TTF") format("truetype")
+}
+@font-face {
+    font-family: yekanbakh;
+    font-style: normal;
+    font-weight: 700;
+    src: url("./../public/fonts/Yekan-bakh/YEKANBAKHFANUM-BOLD.TTF") format("truetype")
+}
+@font-face {
+    font-family: yekanbakh;
+    font-style: normal;
+    font-weight: 800;
+    src: url("./../public/fonts/Yekan-bakh/YEKANBAKHFANUM-EXTRABOLD.TTF") format("truetype")
+}
+@font-face {
+    font-family: yekanbakh;
+    font-style: normal;
+    font-weight: 800;
+    src: url("./../public/fonts/Yekan-bakh/YEKANBAKHFANUM-EXTRABLACK.TTF") format("truetype")
+}
+@font-face {
+    font-family: yekanbakh;
+    font-style: normal;
+    font-weight: 300;
+    src: url("./../public/fonts/Yekan-bakh/YEKANBAKHFANUM-LIGHT.TTF") format("truetype")
+}
+@font-face {
+    font-family: yekanbakh;
+    font-style: normal;
+    font-weight: 400;
+    src: url("./../public/fonts/Yekan-bakh/YEKANBAKHFANUM-REGULAR.TTF") format("truetype")
+}
+@font-face {
+    font-family: yekanbakh;
+    font-style: normal;
+    font-weight: 600;
+    src: url("./../public/fonts/Yekan-bakh/YEKANBAKHFANUM-SEMIBOLD.TTF") format("truetype")
+}
+@font-face {
+    font-family: yekanbakh;
+    font-style: normal;
+    font-weight: 100;
+    src: url("./../public/fonts/Yekan-bakh/YEKANBAKHFANUM-THIN.TTF") format("truetype")
+}

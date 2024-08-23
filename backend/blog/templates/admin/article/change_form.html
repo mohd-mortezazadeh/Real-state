@@ -1,0 +1,18 @@
+{% extends "admin/change_form.html" %}
+{% load static %}
+
+<div> change form connect</div>
+{% block extrahead %}
+    {{ block.super }}
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#textarea1").CharacterCount({
+                charactersRemainingControlId: "remainingCount1"
+            });
+        });
+    </script>       
+    
+    <textarea id="textarea1" name="textarea1" cols="20" rows="3" maxlength="10"></textarea>
+    
+    The number of characters left is: <span id="remainingCount1">0</span>
+{% endblock %}

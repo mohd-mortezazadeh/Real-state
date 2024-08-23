@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>post_manager.migrations package &mdash; villaarzan 1.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            villaarzan
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules/views.html">Views</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">villaarzan</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">post_manager.migrations package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/post_manager.migrations.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="post-manager-migrations-package">
+<h1>post_manager.migrations package<a class="headerlink" href="#post-manager-migrations-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-post_manager.migrations.0001_initial">
+<span id="post-manager-migrations-0001-initial-module"></span><h2>post_manager.migrations.0001_initial module<a class="headerlink" href="#module-post_manager.migrations.0001_initial" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0001_initial.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0001_initial.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0001_initial.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0001_initial.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('user_area',</span> <span class="pre">'__first__'),</span> <span class="pre">('user_area',</span> <span class="pre">'0014_alter_city_slug_alter_section_slug')]</span></em><a class="headerlink" href="#post_manager.migrations.0001_initial.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0001_initial.Migration.initial">
+<span class="sig-name descname"><span class="pre">initial</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></em><a class="headerlink" href="#post_manager.migrations.0001_initial.Migration.initial" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0001_initial.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;CreateModel</span>&#160; <span class="pre">name='Ad',</span> <span class="pre">fields=[('id',</span> <span class="pre">&lt;django.db.models.fields.BigAutoField&gt;),</span> <span class="pre">('created_at',</span> <span class="pre">&lt;django.db.models.fields.DateTimeField&gt;),</span> <span class="pre">('update_at',</span> <span class="pre">&lt;django.db.models.fields.DateTimeField&gt;),</span> <span class="pre">('title',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;),</span> <span class="pre">('description',</span> <span class="pre">&lt;django.db.models.fields.TextField&gt;),</span> <span class="pre">('home_phone',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;),</span> <span class="pre">('price',</span> <span class="pre">&lt;django.db.models.fields.PositiveBigIntegerField&gt;),</span> <span class="pre">('slug',</span> <span class="pre">&lt;django.db.models.fields.SlugField&gt;),</span> <span class="pre">('code',</span> <span class="pre">&lt;django.db.models.fields.PositiveIntegerField&gt;),</span> <span class="pre">('lat_path',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;),</span> <span class="pre">('lng_path',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;),</span> <span class="pre">('status',</span> <span class="pre">&lt;django.db.models.fields.IntegerField&gt;),</span> <span class="pre">('bookmark',</span> <span class="pre">&lt;django.db.models.fields.related.ManyToManyField&gt;)],</span> <span class="pre">options={'abstract':</span> <span class="pre">False}&gt;,</span> <span class="pre">&lt;CreateModel</span>&#160; <span class="pre">name='AdOption',</span> <span class="pre">fields=[('id',</span> <span class="pre">&lt;django.db.models.fields.BigAutoField&gt;),</span> <span class="pre">('name',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;)]&gt;,</span> <span class="pre">&lt;CreateModel</span>&#160; <span class="pre">name='Category',</span> <span class="pre">fields=[('id',</span> <span class="pre">&lt;django.db.models.fields.BigAutoField&gt;),</span> <span class="pre">('name',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;)]&gt;,</span> <span class="pre">&lt;CreateModel</span>&#160; <span class="pre">name='AdMeta',</span> <span class="pre">fields=[('id',</span> <span class="pre">&lt;django.db.models.fields.BigAutoField&gt;),</span> <span class="pre">('key',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;),</span> <span class="pre">('value',</span> <span class="pre">&lt;django.db.models.fields.TextField&gt;),</span> <span class="pre">('ad',</span> <span class="pre">&lt;django.db.models.fields.related.ForeignKey&gt;)]&gt;,</span> <span class="pre">&lt;AddField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='category',</span> <span class="pre">field=&lt;django.db.models.fields.related.ForeignKey&gt;&gt;,</span> <span class="pre">&lt;AddField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='media',</span> <span class="pre">field=&lt;django.db.models.fields.related.ManyToManyField&gt;&gt;,</span> <span class="pre">&lt;AddField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='options',</span> <span class="pre">field=&lt;django.db.models.fields.related.ManyToManyField&gt;&gt;,</span> <span class="pre">&lt;AddField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='rating',</span> <span class="pre">field=&lt;django.db.models.fields.related.ManyToManyField&gt;&gt;,</span> <span class="pre">&lt;AddField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='section',</span> <span class="pre">field=&lt;django.db.models.fields.related.ForeignKey&gt;&gt;,</span> <span class="pre">&lt;AddField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='user',</span> <span class="pre">field=&lt;django.db.models.fields.related.ForeignKey&gt;&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0001_initial.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0002_alter_ad_home_phone_alter_ad_lat_path_and_more">
+<span id="post-manager-migrations-0002-alter-ad-home-phone-alter-ad-lat-path-and-more-module"></span><h2>post_manager.migrations.0002_alter_ad_home_phone_alter_ad_lat_path_and_more module<a class="headerlink" href="#module-post_manager.migrations.0002_alter_ad_home_phone_alter_ad_lat_path_and_more" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0002_alter_ad_home_phone_alter_ad_lat_path_and_more.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0002_alter_ad_home_phone_alter_ad_lat_path_and_more.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0002_alter_ad_home_phone_alter_ad_lat_path_and_more.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0002_alter_ad_home_phone_alter_ad_lat_path_and_more.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0001_initial')]</span></em><a class="headerlink" href="#post_manager.migrations.0002_alter_ad_home_phone_alter_ad_lat_path_and_more.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0002_alter_ad_home_phone_alter_ad_lat_path_and_more.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AlterField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='home_phone',</span> <span class="pre">field=&lt;django.db.models.fields.CharField&gt;&gt;,</span> <span class="pre">&lt;AlterField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='lat_path',</span> <span class="pre">field=&lt;django.db.models.fields.CharField&gt;&gt;,</span> <span class="pre">&lt;AlterField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='lng_path',</span> <span class="pre">field=&lt;django.db.models.fields.CharField&gt;&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0002_alter_ad_home_phone_alter_ad_lat_path_and_more.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0003_alter_ad_options">
+<span id="post-manager-migrations-0003-alter-ad-options-module"></span><h2>post_manager.migrations.0003_alter_ad_options module<a class="headerlink" href="#module-post_manager.migrations.0003_alter_ad_options" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0003_alter_ad_options.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0003_alter_ad_options.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0003_alter_ad_options.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0003_alter_ad_options.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0002_alter_ad_home_phone_alter_ad_lat_path_and_more')]</span></em><a class="headerlink" href="#post_manager.migrations.0003_alter_ad_options.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0003_alter_ad_options.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AlterField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='options',</span> <span class="pre">field=&lt;django.db.models.fields.related.ManyToManyField&gt;&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0003_alter_ad_options.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0004_alter_ad_options">
+<span id="post-manager-migrations-0004-alter-ad-options-module"></span><h2>post_manager.migrations.0004_alter_ad_options module<a class="headerlink" href="#module-post_manager.migrations.0004_alter_ad_options" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0004_alter_ad_options.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0004_alter_ad_options.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0004_alter_ad_options.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0004_alter_ad_options.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0003_alter_ad_options')]</span></em><a class="headerlink" href="#post_manager.migrations.0004_alter_ad_options.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0004_alter_ad_options.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AlterField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='options',</span> <span class="pre">field=&lt;django.db.models.fields.related.ManyToManyField&gt;&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0004_alter_ad_options.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0005_remove_ad_code">
+<span id="post-manager-migrations-0005-remove-ad-code-module"></span><h2>post_manager.migrations.0005_remove_ad_code module<a class="headerlink" href="#module-post_manager.migrations.0005_remove_ad_code" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0005_remove_ad_code.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0005_remove_ad_code.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0005_remove_ad_code.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0005_remove_ad_code.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0004_alter_ad_options')]</span></em><a class="headerlink" href="#post_manager.migrations.0005_remove_ad_code.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0005_remove_ad_code.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;RemoveField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='code'&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0005_remove_ad_code.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0006_adoption_display_name">
+<span id="post-manager-migrations-0006-adoption-display-name-module"></span><h2>post_manager.migrations.0006_adoption_display_name module<a class="headerlink" href="#module-post_manager.migrations.0006_adoption_display_name" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0006_adoption_display_name.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0006_adoption_display_name.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0006_adoption_display_name.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0006_adoption_display_name.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0005_remove_ad_code')]</span></em><a class="headerlink" href="#post_manager.migrations.0006_adoption_display_name.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0006_adoption_display_name.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AddField</span>&#160; <span class="pre">model_name='adoption',</span> <span class="pre">name='display_name',</span> <span class="pre">field=&lt;django.db.models.fields.CharField&gt;,</span> <span class="pre">preserve_default=False&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0006_adoption_display_name.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0007_ad_thumbnails_alter_ad_media">
+<span id="post-manager-migrations-0007-ad-thumbnails-alter-ad-media-module"></span><h2>post_manager.migrations.0007_ad_thumbnails_alter_ad_media module<a class="headerlink" href="#module-post_manager.migrations.0007_ad_thumbnails_alter_ad_media" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0007_ad_thumbnails_alter_ad_media.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0007_ad_thumbnails_alter_ad_media.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0007_ad_thumbnails_alter_ad_media.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0007_ad_thumbnails_alter_ad_media.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('user_area',</span> <span class="pre">'0020_alter_mediauser_file_alter_user_avatar'),</span> <span class="pre">('post_manager',</span> <span class="pre">'0006_adoption_display_name')]</span></em><a class="headerlink" href="#post_manager.migrations.0007_ad_thumbnails_alter_ad_media.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0007_ad_thumbnails_alter_ad_media.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AddField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='thumbnails',</span> <span class="pre">field=&lt;django.db.models.fields.related.ForeignKey&gt;,</span> <span class="pre">preserve_default=False&gt;,</span> <span class="pre">&lt;AlterField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='media',</span> <span class="pre">field=&lt;django.db.models.fields.related.ManyToManyField&gt;&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0007_ad_thumbnails_alter_ad_media.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0008_remove_ad_thumbnails">
+<span id="post-manager-migrations-0008-remove-ad-thumbnails-module"></span><h2>post_manager.migrations.0008_remove_ad_thumbnails module<a class="headerlink" href="#module-post_manager.migrations.0008_remove_ad_thumbnails" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0008_remove_ad_thumbnails.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0008_remove_ad_thumbnails.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0008_remove_ad_thumbnails.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0008_remove_ad_thumbnails.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0007_ad_thumbnails_alter_ad_media')]</span></em><a class="headerlink" href="#post_manager.migrations.0008_remove_ad_thumbnails.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0008_remove_ad_thumbnails.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;RemoveField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='thumbnails'&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0008_remove_ad_thumbnails.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0009_alter_ad_media">
+<span id="post-manager-migrations-0009-alter-ad-media-module"></span><h2>post_manager.migrations.0009_alter_ad_media module<a class="headerlink" href="#module-post_manager.migrations.0009_alter_ad_media" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0009_alter_ad_media.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0009_alter_ad_media.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0009_alter_ad_media.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0009_alter_ad_media.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('user_area',</span> <span class="pre">'0020_alter_mediauser_file_alter_user_avatar'),</span> <span class="pre">('post_manager',</span> <span class="pre">'0008_remove_ad_thumbnails')]</span></em><a class="headerlink" href="#post_manager.migrations.0009_alter_ad_media.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0009_alter_ad_media.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AlterField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='media',</span> <span class="pre">field=&lt;django.db.models.fields.related.ManyToManyField&gt;&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0009_alter_ad_media.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0010_adcategory">
+<span id="post-manager-migrations-0010-adcategory-module"></span><h2>post_manager.migrations.0010_adcategory module<a class="headerlink" href="#module-post_manager.migrations.0010_adcategory" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0010_adcategory.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0010_adcategory.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0010_adcategory.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0010_adcategory.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0009_alter_ad_media')]</span></em><a class="headerlink" href="#post_manager.migrations.0010_adcategory.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0010_adcategory.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;CreateModel</span>&#160; <span class="pre">name='AdCategory',</span> <span class="pre">fields=[('id',</span> <span class="pre">&lt;django.db.models.fields.BigAutoField&gt;),</span> <span class="pre">('name',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;),</span> <span class="pre">('display_name',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;)]&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0010_adcategory.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0011_rename_adcategory_categorymeta">
+<span id="post-manager-migrations-0011-rename-adcategory-categorymeta-module"></span><h2>post_manager.migrations.0011_rename_adcategory_categorymeta module<a class="headerlink" href="#module-post_manager.migrations.0011_rename_adcategory_categorymeta" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0011_rename_adcategory_categorymeta.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0011_rename_adcategory_categorymeta.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0011_rename_adcategory_categorymeta.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0011_rename_adcategory_categorymeta.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0010_adcategory')]</span></em><a class="headerlink" href="#post_manager.migrations.0011_rename_adcategory_categorymeta.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0011_rename_adcategory_categorymeta.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;RenameModel</span>&#160; <span class="pre">old_name='AdCategory',</span> <span class="pre">new_name='CategoryMeta'&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0011_rename_adcategory_categorymeta.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0012_categorymeta_category">
+<span id="post-manager-migrations-0012-categorymeta-category-module"></span><h2>post_manager.migrations.0012_categorymeta_category module<a class="headerlink" href="#module-post_manager.migrations.0012_categorymeta_category" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0012_categorymeta_category.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0012_categorymeta_category.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0012_categorymeta_category.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0012_categorymeta_category.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0011_rename_adcategory_categorymeta')]</span></em><a class="headerlink" href="#post_manager.migrations.0012_categorymeta_category.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0012_categorymeta_category.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AddField</span>&#160; <span class="pre">model_name='categorymeta',</span> <span class="pre">name='category',</span> <span class="pre">field=&lt;django.db.models.fields.related.ForeignKey&gt;,</span> <span class="pre">preserve_default=False&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0012_categorymeta_category.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0013_adoption_category">
+<span id="post-manager-migrations-0013-adoption-category-module"></span><h2>post_manager.migrations.0013_adoption_category module<a class="headerlink" href="#module-post_manager.migrations.0013_adoption_category" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0013_adoption_category.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0013_adoption_category.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0013_adoption_category.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0013_adoption_category.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0012_categorymeta_category')]</span></em><a class="headerlink" href="#post_manager.migrations.0013_adoption_category.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0013_adoption_category.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AddField</span>&#160; <span class="pre">model_name='adoption',</span> <span class="pre">name='category',</span> <span class="pre">field=&lt;django.db.models.fields.related.ForeignKey&gt;,</span> <span class="pre">preserve_default=False&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0013_adoption_category.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0014_remove_adoption_category_adoption_category">
+<span id="post-manager-migrations-0014-remove-adoption-category-adoption-category-module"></span><h2>post_manager.migrations.0014_remove_adoption_category_adoption_category module<a class="headerlink" href="#module-post_manager.migrations.0014_remove_adoption_category_adoption_category" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0014_remove_adoption_category_adoption_category.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0014_remove_adoption_category_adoption_category.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0014_remove_adoption_category_adoption_category.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0014_remove_adoption_category_adoption_category.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0013_adoption_category')]</span></em><a class="headerlink" href="#post_manager.migrations.0014_remove_adoption_category_adoption_category.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0014_remove_adoption_category_adoption_category.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;RemoveField</span>&#160; <span class="pre">model_name='adoption',</span> <span class="pre">name='category'&gt;,</span> <span class="pre">&lt;AddField</span>&#160; <span class="pre">model_name='adoption',</span> <span class="pre">name='category',</span> <span class="pre">field=&lt;django.db.models.fields.related.ManyToManyField&gt;&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0014_remove_adoption_category_adoption_category.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0015_alter_admeta_ad">
+<span id="post-manager-migrations-0015-alter-admeta-ad-module"></span><h2>post_manager.migrations.0015_alter_admeta_ad module<a class="headerlink" href="#module-post_manager.migrations.0015_alter_admeta_ad" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0015_alter_admeta_ad.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0015_alter_admeta_ad.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0015_alter_admeta_ad.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0015_alter_admeta_ad.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0014_remove_adoption_category_adoption_category')]</span></em><a class="headerlink" href="#post_manager.migrations.0015_alter_admeta_ad.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0015_alter_admeta_ad.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AlterField</span>&#160; <span class="pre">model_name='admeta',</span> <span class="pre">name='ad',</span> <span class="pre">field=&lt;django.db.models.fields.related.ForeignKey&gt;&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0015_alter_admeta_ad.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0016_alter_admeta_ad">
+<span id="post-manager-migrations-0016-alter-admeta-ad-module"></span><h2>post_manager.migrations.0016_alter_admeta_ad module<a class="headerlink" href="#module-post_manager.migrations.0016_alter_admeta_ad" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0016_alter_admeta_ad.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0016_alter_admeta_ad.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0016_alter_admeta_ad.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0016_alter_admeta_ad.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0015_alter_admeta_ad')]</span></em><a class="headerlink" href="#post_manager.migrations.0016_alter_admeta_ad.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0016_alter_admeta_ad.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AlterField</span>&#160; <span class="pre">model_name='admeta',</span> <span class="pre">name='ad',</span> <span class="pre">field=&lt;django.db.models.fields.related.ForeignKey&gt;&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0016_alter_admeta_ad.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0017_categorymeta_ad_alter_categorymeta_category">
+<span id="post-manager-migrations-0017-categorymeta-ad-alter-categorymeta-category-module"></span><h2>post_manager.migrations.0017_categorymeta_ad_alter_categorymeta_category module<a class="headerlink" href="#module-post_manager.migrations.0017_categorymeta_ad_alter_categorymeta_category" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0017_categorymeta_ad_alter_categorymeta_category.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0017_categorymeta_ad_alter_categorymeta_category.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0017_categorymeta_ad_alter_categorymeta_category.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0017_categorymeta_ad_alter_categorymeta_category.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0016_alter_admeta_ad')]</span></em><a class="headerlink" href="#post_manager.migrations.0017_categorymeta_ad_alter_categorymeta_category.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0017_categorymeta_ad_alter_categorymeta_category.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AddField</span>&#160; <span class="pre">model_name='categorymeta',</span> <span class="pre">name='ad',</span> <span class="pre">field=&lt;django.db.models.fields.related.ForeignKey&gt;&gt;,</span> <span class="pre">&lt;AlterField</span>&#160; <span class="pre">model_name='categorymeta',</span> <span class="pre">name='category',</span> <span class="pre">field=&lt;django.db.models.fields.related.ForeignKey&gt;&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0017_categorymeta_ad_alter_categorymeta_category.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0018_remove_categorymeta_ad">
+<span id="post-manager-migrations-0018-remove-categorymeta-ad-module"></span><h2>post_manager.migrations.0018_remove_categorymeta_ad module<a class="headerlink" href="#module-post_manager.migrations.0018_remove_categorymeta_ad" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0018_remove_categorymeta_ad.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0018_remove_categorymeta_ad.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0018_remove_categorymeta_ad.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0018_remove_categorymeta_ad.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0017_categorymeta_ad_alter_categorymeta_category')]</span></em><a class="headerlink" href="#post_manager.migrations.0018_remove_categorymeta_ad.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0018_remove_categorymeta_ad.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;RemoveField</span>&#160; <span class="pre">model_name='categorymeta',</span> <span class="pre">name='ad'&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0018_remove_categorymeta_ad.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0019_alter_categorymeta_category_categoryadmeta">
+<span id="post-manager-migrations-0019-alter-categorymeta-category-categoryadmeta-module"></span><h2>post_manager.migrations.0019_alter_categorymeta_category_categoryadmeta module<a class="headerlink" href="#module-post_manager.migrations.0019_alter_categorymeta_category_categoryadmeta" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0019_alter_categorymeta_category_categoryadmeta.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0019_alter_categorymeta_category_categoryadmeta.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0019_alter_categorymeta_category_categoryadmeta.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0019_alter_categorymeta_category_categoryadmeta.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0018_remove_categorymeta_ad')]</span></em><a class="headerlink" href="#post_manager.migrations.0019_alter_categorymeta_category_categoryadmeta.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0019_alter_categorymeta_category_categoryadmeta.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AlterField</span>&#160; <span class="pre">model_name='categorymeta',</span> <span class="pre">name='category',</span> <span class="pre">field=&lt;django.db.models.fields.related.ForeignKey&gt;&gt;,</span> <span class="pre">&lt;CreateModel</span>&#160; <span class="pre">name='CategoryAdMeta',</span> <span class="pre">fields=[('id',</span> <span class="pre">&lt;django.db.models.fields.BigAutoField&gt;),</span> <span class="pre">('ad',</span> <span class="pre">&lt;django.db.models.fields.related.ForeignKey&gt;),</span> <span class="pre">('category_meta',</span> <span class="pre">&lt;django.db.models.fields.related.ForeignKey&gt;)]&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0019_alter_categorymeta_category_categoryadmeta.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0020_alter_ad_description_alter_ad_title">
+<span id="post-manager-migrations-0020-alter-ad-description-alter-ad-title-module"></span><h2>post_manager.migrations.0020_alter_ad_description_alter_ad_title module<a class="headerlink" href="#module-post_manager.migrations.0020_alter_ad_description_alter_ad_title" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0020_alter_ad_description_alter_ad_title.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0020_alter_ad_description_alter_ad_title.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0020_alter_ad_description_alter_ad_title.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0020_alter_ad_description_alter_ad_title.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0019_alter_categorymeta_category_categoryadmeta')]</span></em><a class="headerlink" href="#post_manager.migrations.0020_alter_ad_description_alter_ad_title.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0020_alter_ad_description_alter_ad_title.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AlterField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='description',</span> <span class="pre">field=&lt;django.db.models.fields.TextField&gt;&gt;,</span> <span class="pre">&lt;AlterField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='title',</span> <span class="pre">field=&lt;django.db.models.fields.CharField&gt;&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0020_alter_ad_description_alter_ad_title.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0021_category_meta_tags_categorymeta_meta_tags">
+<span id="post-manager-migrations-0021-category-meta-tags-categorymeta-meta-tags-module"></span><h2>post_manager.migrations.0021_category_meta_tags_categorymeta_meta_tags module<a class="headerlink" href="#module-post_manager.migrations.0021_category_meta_tags_categorymeta_meta_tags" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0021_category_meta_tags_categorymeta_meta_tags.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0021_category_meta_tags_categorymeta_meta_tags.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0021_category_meta_tags_categorymeta_meta_tags.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0021_category_meta_tags_categorymeta_meta_tags.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0020_alter_ad_description_alter_ad_title')]</span></em><a class="headerlink" href="#post_manager.migrations.0021_category_meta_tags_categorymeta_meta_tags.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0021_category_meta_tags_categorymeta_meta_tags.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AddField</span>&#160; <span class="pre">model_name='category',</span> <span class="pre">name='meta_tags',</span> <span class="pre">field=&lt;django.db.models.fields.TextField&gt;&gt;,</span> <span class="pre">&lt;AddField</span>&#160; <span class="pre">model_name='categorymeta',</span> <span class="pre">name='meta_tags',</span> <span class="pre">field=&lt;django.db.models.fields.TextField&gt;&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0021_category_meta_tags_categorymeta_meta_tags.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0022_alter_category_name">
+<span id="post-manager-migrations-0022-alter-category-name-module"></span><h2>post_manager.migrations.0022_alter_category_name module<a class="headerlink" href="#module-post_manager.migrations.0022_alter_category_name" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0022_alter_category_name.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0022_alter_category_name.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0022_alter_category_name.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0022_alter_category_name.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0021_category_meta_tags_categorymeta_meta_tags')]</span></em><a class="headerlink" href="#post_manager.migrations.0022_alter_category_name.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0022_alter_category_name.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AlterField</span>&#160; <span class="pre">model_name='category',</span> <span class="pre">name='name',</span> <span class="pre">field=&lt;django.db.models.fields.CharField&gt;&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0022_alter_category_name.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0023_alter_category_name">
+<span id="post-manager-migrations-0023-alter-category-name-module"></span><h2>post_manager.migrations.0023_alter_category_name module<a class="headerlink" href="#module-post_manager.migrations.0023_alter_category_name" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0023_alter_category_name.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0023_alter_category_name.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0023_alter_category_name.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0023_alter_category_name.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0022_alter_category_name')]</span></em><a class="headerlink" href="#post_manager.migrations.0023_alter_category_name.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0023_alter_category_name.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AlterField</span>&#160; <span class="pre">model_name='category',</span> <span class="pre">name='name',</span> <span class="pre">field=&lt;django.db.models.fields.CharField&gt;&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0023_alter_category_name.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0024_alter_category_name">
+<span id="post-manager-migrations-0024-alter-category-name-module"></span><h2>post_manager.migrations.0024_alter_category_name module<a class="headerlink" href="#module-post_manager.migrations.0024_alter_category_name" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0024_alter_category_name.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0024_alter_category_name.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0024_alter_category_name.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0024_alter_category_name.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0023_alter_category_name')]</span></em><a class="headerlink" href="#post_manager.migrations.0024_alter_category_name.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0024_alter_category_name.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AlterField</span>&#160; <span class="pre">model_name='category',</span> <span class="pre">name='name',</span> <span class="pre">field=&lt;django.db.models.fields.CharField&gt;,</span> <span class="pre">preserve_default=False&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0024_alter_category_name.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0025_remove_category_meta_tags_and_more">
+<span id="post-manager-migrations-0025-remove-category-meta-tags-and-more-module"></span><h2>post_manager.migrations.0025_remove_category_meta_tags_and_more module<a class="headerlink" href="#module-post_manager.migrations.0025_remove_category_meta_tags_and_more" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0025_remove_category_meta_tags_and_more.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0025_remove_category_meta_tags_and_more.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0025_remove_category_meta_tags_and_more.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0025_remove_category_meta_tags_and_more.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0024_alter_category_name')]</span></em><a class="headerlink" href="#post_manager.migrations.0025_remove_category_meta_tags_and_more.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0025_remove_category_meta_tags_and_more.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;RemoveField</span>&#160; <span class="pre">model_name='category',</span> <span class="pre">name='meta_tags'&gt;,</span> <span class="pre">&lt;RemoveField</span>&#160; <span class="pre">model_name='categorymeta',</span> <span class="pre">name='meta_tags'&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0025_remove_category_meta_tags_and_more.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0026_category_display_name">
+<span id="post-manager-migrations-0026-category-display-name-module"></span><h2>post_manager.migrations.0026_category_display_name module<a class="headerlink" href="#module-post_manager.migrations.0026_category_display_name" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0026_category_display_name.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0026_category_display_name.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0026_category_display_name.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0026_category_display_name.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0025_remove_category_meta_tags_and_more')]</span></em><a class="headerlink" href="#post_manager.migrations.0026_category_display_name.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0026_category_display_name.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AddField</span>&#160; <span class="pre">model_name='category',</span> <span class="pre">name='display_name',</span> <span class="pre">field=&lt;django.db.models.fields.CharField&gt;,</span> <span class="pre">preserve_default=False&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0026_category_display_name.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0027_remove_categorymeta_category_delete_categoryadmeta_and_more">
+<span id="post-manager-migrations-0027-remove-categorymeta-category-delete-categoryadmeta-and-more-module"></span><h2>post_manager.migrations.0027_remove_categorymeta_category_delete_categoryadmeta_and_more module<a class="headerlink" href="#module-post_manager.migrations.0027_remove_categorymeta_category_delete_categoryadmeta_and_more" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0027_remove_categorymeta_category_delete_categoryadmeta_and_more.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0027_remove_categorymeta_category_delete_categoryadmeta_and_more.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0027_remove_categorymeta_category_delete_categoryadmeta_and_more.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0027_remove_categorymeta_category_delete_categoryadmeta_and_more.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0026_category_display_name')]</span></em><a class="headerlink" href="#post_manager.migrations.0027_remove_categorymeta_category_delete_categoryadmeta_and_more.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0027_remove_categorymeta_category_delete_categoryadmeta_and_more.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;RemoveField</span>&#160; <span class="pre">model_name='categorymeta',</span> <span class="pre">name='category'&gt;,</span> <span class="pre">&lt;DeleteModel</span>&#160; <span class="pre">name='CategoryAdMeta'&gt;,</span> <span class="pre">&lt;DeleteModel</span>&#160; <span class="pre">name='CategoryMeta'&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0027_remove_categorymeta_category_delete_categoryadmeta_and_more.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0028_alter_admeta_key_alter_adoption_display_name_and_more">
+<span id="post-manager-migrations-0028-alter-admeta-key-alter-adoption-display-name-and-more-module"></span><h2>post_manager.migrations.0028_alter_admeta_key_alter_adoption_display_name_and_more module<a class="headerlink" href="#module-post_manager.migrations.0028_alter_admeta_key_alter_adoption_display_name_and_more" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0028_alter_admeta_key_alter_adoption_display_name_and_more.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0028_alter_admeta_key_alter_adoption_display_name_and_more.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0028_alter_admeta_key_alter_adoption_display_name_and_more.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0028_alter_admeta_key_alter_adoption_display_name_and_more.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0027_remove_categorymeta_category_delete_categoryadmeta_and_more')]</span></em><a class="headerlink" href="#post_manager.migrations.0028_alter_admeta_key_alter_adoption_display_name_and_more.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0028_alter_admeta_key_alter_adoption_display_name_and_more.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AlterField</span>&#160; <span class="pre">model_name='admeta',</span> <span class="pre">name='key',</span> <span class="pre">field=&lt;django.db.models.fields.CharField&gt;&gt;,</span> <span class="pre">&lt;AlterField</span>&#160; <span class="pre">model_name='adoption',</span> <span class="pre">name='display_name',</span> <span class="pre">field=&lt;django.db.models.fields.CharField&gt;&gt;,</span> <span class="pre">&lt;AlterField</span>&#160; <span class="pre">model_name='adoption',</span> <span class="pre">name='name',</span> <span class="pre">field=&lt;django.db.models.fields.CharField&gt;&gt;,</span> <span class="pre">&lt;AlterField</span>&#160; <span class="pre">model_name='category',</span> <span class="pre">name='display_name',</span> <span class="pre">field=&lt;django.db.models.fields.CharField&gt;&gt;,</span> <span class="pre">&lt;AlterField</span>&#160; <span class="pre">model_name='category',</span> <span class="pre">name='name',</span> <span class="pre">field=&lt;django.db.models.fields.CharField&gt;&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0028_alter_admeta_key_alter_adoption_display_name_and_more.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0029_category_city">
+<span id="post-manager-migrations-0029-category-city-module"></span><h2>post_manager.migrations.0029_category_city module<a class="headerlink" href="#module-post_manager.migrations.0029_category_city" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0029_category_city.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0029_category_city.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0029_category_city.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0029_category_city.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('user_area',</span> <span class="pre">'0040_alter_mediauser_subject_type'),</span> <span class="pre">('post_manager',</span> <span class="pre">'0028_alter_admeta_key_alter_adoption_display_name_and_more')]</span></em><a class="headerlink" href="#post_manager.migrations.0029_category_city.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0029_category_city.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AddField</span>&#160; <span class="pre">model_name='category',</span> <span class="pre">name='city',</span> <span class="pre">field=&lt;django.db.models.fields.related.ManyToManyField&gt;&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0029_category_city.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0030_alter_ad_slug">
+<span id="post-manager-migrations-0030-alter-ad-slug-module"></span><h2>post_manager.migrations.0030_alter_ad_slug module<a class="headerlink" href="#module-post_manager.migrations.0030_alter_ad_slug" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0030_alter_ad_slug.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0030_alter_ad_slug.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0030_alter_ad_slug.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0030_alter_ad_slug.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0029_category_city')]</span></em><a class="headerlink" href="#post_manager.migrations.0030_alter_ad_slug.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0030_alter_ad_slug.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AlterField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='slug',</span> <span class="pre">field=&lt;django.db.models.fields.SlugField&gt;&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0030_alter_ad_slug.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0031_alter_category_options">
+<span id="post-manager-migrations-0031-alter-category-options-module"></span><h2>post_manager.migrations.0031_alter_category_options module<a class="headerlink" href="#module-post_manager.migrations.0031_alter_category_options" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0031_alter_category_options.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0031_alter_category_options.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0031_alter_category_options.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0031_alter_category_options.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0030_alter_ad_slug')]</span></em><a class="headerlink" href="#post_manager.migrations.0031_alter_category_options.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0031_alter_category_options.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AlterModelOptions</span>&#160; <span class="pre">name='category',</span> <span class="pre">options={'verbose_name':</span> <span class="pre">'Category',</span> <span class="pre">'verbose_name_plural':</span> <span class="pre">'Categories'}&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0031_alter_category_options.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0032_ad_hash_link_ad_original_url">
+<span id="post-manager-migrations-0032-ad-hash-link-ad-original-url-module"></span><h2>post_manager.migrations.0032_ad_hash_link_ad_original_url module<a class="headerlink" href="#module-post_manager.migrations.0032_ad_hash_link_ad_original_url" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0032_ad_hash_link_ad_original_url.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0032_ad_hash_link_ad_original_url.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0032_ad_hash_link_ad_original_url.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0032_ad_hash_link_ad_original_url.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0031_alter_category_options')]</span></em><a class="headerlink" href="#post_manager.migrations.0032_ad_hash_link_ad_original_url.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0032_ad_hash_link_ad_original_url.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AddField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='hash_link',</span> <span class="pre">field=&lt;django.db.models.fields.CharField&gt;,</span> <span class="pre">preserve_default=False&gt;,</span> <span class="pre">&lt;AddField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='original_url',</span> <span class="pre">field=&lt;django.db.models.fields.CharField&gt;,</span> <span class="pre">preserve_default=False&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0032_ad_hash_link_ad_original_url.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0033_alter_ad_hash_link_alter_ad_original_url">
+<span id="post-manager-migrations-0033-alter-ad-hash-link-alter-ad-original-url-module"></span><h2>post_manager.migrations.0033_alter_ad_hash_link_alter_ad_original_url module<a class="headerlink" href="#module-post_manager.migrations.0033_alter_ad_hash_link_alter_ad_original_url" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0033_alter_ad_hash_link_alter_ad_original_url.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0033_alter_ad_hash_link_alter_ad_original_url.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0033_alter_ad_hash_link_alter_ad_original_url.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0033_alter_ad_hash_link_alter_ad_original_url.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0032_ad_hash_link_ad_original_url')]</span></em><a class="headerlink" href="#post_manager.migrations.0033_alter_ad_hash_link_alter_ad_original_url.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0033_alter_ad_hash_link_alter_ad_original_url.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AlterField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='hash_link',</span> <span class="pre">field=&lt;django.db.models.fields.CharField&gt;&gt;,</span> <span class="pre">&lt;AlterField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='original_url',</span> <span class="pre">field=&lt;django.db.models.fields.CharField&gt;&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0033_alter_ad_hash_link_alter_ad_original_url.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0034_remove_ad_hash_link_remove_ad_original_url_adlink">
+<span id="post-manager-migrations-0034-remove-ad-hash-link-remove-ad-original-url-adlink-module"></span><h2>post_manager.migrations.0034_remove_ad_hash_link_remove_ad_original_url_adlink module<a class="headerlink" href="#module-post_manager.migrations.0034_remove_ad_hash_link_remove_ad_original_url_adlink" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0034_remove_ad_hash_link_remove_ad_original_url_adlink.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0034_remove_ad_hash_link_remove_ad_original_url_adlink.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0034_remove_ad_hash_link_remove_ad_original_url_adlink.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0034_remove_ad_hash_link_remove_ad_original_url_adlink.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0033_alter_ad_hash_link_alter_ad_original_url')]</span></em><a class="headerlink" href="#post_manager.migrations.0034_remove_ad_hash_link_remove_ad_original_url_adlink.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0034_remove_ad_hash_link_remove_ad_original_url_adlink.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;RemoveField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='hash_link'&gt;,</span> <span class="pre">&lt;RemoveField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='original_url'&gt;,</span> <span class="pre">&lt;CreateModel</span>&#160; <span class="pre">name='AdLink',</span> <span class="pre">fields=[('id',</span> <span class="pre">&lt;django.db.models.fields.BigAutoField&gt;),</span> <span class="pre">('original_url',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;),</span> <span class="pre">('hash_link',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;),</span> <span class="pre">('ad',</span> <span class="pre">&lt;django.db.models.fields.related.ForeignKey&gt;)]&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0034_remove_ad_hash_link_remove_ad_original_url_adlink.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0035_alter_adlink_hash_link">
+<span id="post-manager-migrations-0035-alter-adlink-hash-link-module"></span><h2>post_manager.migrations.0035_alter_adlink_hash_link module<a class="headerlink" href="#module-post_manager.migrations.0035_alter_adlink_hash_link" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0035_alter_adlink_hash_link.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0035_alter_adlink_hash_link.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0035_alter_adlink_hash_link.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0035_alter_adlink_hash_link.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0034_remove_ad_hash_link_remove_ad_original_url_adlink')]</span></em><a class="headerlink" href="#post_manager.migrations.0035_alter_adlink_hash_link.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0035_alter_adlink_hash_link.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AlterField</span>&#160; <span class="pre">model_name='adlink',</span> <span class="pre">name='hash_link',</span> <span class="pre">field=&lt;django.db.models.fields.CharField&gt;&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0035_alter_adlink_hash_link.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0036_delete_adlink">
+<span id="post-manager-migrations-0036-delete-adlink-module"></span><h2>post_manager.migrations.0036_delete_adlink module<a class="headerlink" href="#module-post_manager.migrations.0036_delete_adlink" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0036_delete_adlink.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0036_delete_adlink.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0036_delete_adlink.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0036_delete_adlink.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0035_alter_adlink_hash_link')]</span></em><a class="headerlink" href="#post_manager.migrations.0036_delete_adlink.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0036_delete_adlink.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;DeleteModel</span>&#160; <span class="pre">name='AdLink'&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0036_delete_adlink.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0037_ad_view">
+<span id="post-manager-migrations-0037-ad-view-module"></span><h2>post_manager.migrations.0037_ad_view module<a class="headerlink" href="#module-post_manager.migrations.0037_ad_view" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0037_ad_view.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0037_ad_view.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0037_ad_view.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0037_ad_view.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0036_delete_adlink')]</span></em><a class="headerlink" href="#post_manager.migrations.0037_ad_view.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0037_ad_view.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AddField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='view',</span> <span class="pre">field=&lt;django.db.models.fields.PositiveBigIntegerField&gt;&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0037_ad_view.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0038_ad_code">
+<span id="post-manager-migrations-0038-ad-code-module"></span><h2>post_manager.migrations.0038_ad_code module<a class="headerlink" href="#module-post_manager.migrations.0038_ad_code" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0038_ad_code.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0038_ad_code.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0038_ad_code.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0038_ad_code.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0037_ad_view')]</span></em><a class="headerlink" href="#post_manager.migrations.0038_ad_code.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0038_ad_code.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AddField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='code',</span> <span class="pre">field=&lt;django.db.models.fields.CharField&gt;&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0038_ad_code.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0039_remove_ad_code">
+<span id="post-manager-migrations-0039-remove-ad-code-module"></span><h2>post_manager.migrations.0039_remove_ad_code module<a class="headerlink" href="#module-post_manager.migrations.0039_remove_ad_code" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0039_remove_ad_code.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0039_remove_ad_code.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0039_remove_ad_code.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0039_remove_ad_code.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0038_ad_code')]</span></em><a class="headerlink" href="#post_manager.migrations.0039_remove_ad_code.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0039_remove_ad_code.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;RemoveField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='code'&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0039_remove_ad_code.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0040_order_package_payment_order_package_order_user">
+<span id="post-manager-migrations-0040-order-package-payment-order-package-order-user-module"></span><h2>post_manager.migrations.0040_order_package_payment_order_package_order_user module<a class="headerlink" href="#module-post_manager.migrations.0040_order_package_payment_order_package_order_user" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0040_order_package_payment_order_package_order_user.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0040_order_package_payment_order_package_order_user.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0040_order_package_payment_order_package_order_user.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0040_order_package_payment_order_package_order_user.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('user_area',</span> <span class="pre">'__first__'),</span> <span class="pre">('post_manager',</span> <span class="pre">'0039_remove_ad_code')]</span></em><a class="headerlink" href="#post_manager.migrations.0040_order_package_payment_order_package_order_user.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0040_order_package_payment_order_package_order_user.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;CreateModel</span>&#160; <span class="pre">name='Order',</span> <span class="pre">fields=[('id',</span> <span class="pre">&lt;django.db.models.fields.BigAutoField&gt;),</span> <span class="pre">('amount',</span> <span class="pre">&lt;django.db.models.fields.PositiveBigIntegerField&gt;),</span> <span class="pre">('created_at',</span> <span class="pre">&lt;django.db.models.fields.DateTimeField&gt;),</span> <span class="pre">('status',</span> <span class="pre">&lt;django.db.models.fields.IntegerField&gt;),</span> <span class="pre">('ad',</span> <span class="pre">&lt;django.db.models.fields.related.ForeignKey&gt;)]&gt;,</span> <span class="pre">&lt;CreateModel</span>&#160; <span class="pre">name='Package',</span> <span class="pre">fields=[('id',</span> <span class="pre">&lt;django.db.models.fields.BigAutoField&gt;),</span> <span class="pre">('name',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;),</span> <span class="pre">('price',</span> <span class="pre">&lt;django.db.models.fields.PositiveBigIntegerField&gt;),</span> <span class="pre">('ad_count',</span> <span class="pre">&lt;django.db.models.fields.IntegerField&gt;),</span> <span class="pre">('nardeban_count',</span> <span class="pre">&lt;django.db.models.fields.IntegerField&gt;),</span> <span class="pre">('fori_count',</span> <span class="pre">&lt;django.db.models.fields.IntegerField&gt;),</span> <span class="pre">('vip_count',</span> <span class="pre">&lt;django.db.models.fields.IntegerField&gt;)]&gt;,</span> <span class="pre">&lt;CreateModel</span>&#160; <span class="pre">name='Payment',</span> <span class="pre">fields=[('id',</span> <span class="pre">&lt;django.db.models.fields.BigAutoField&gt;),</span> <span class="pre">('authority',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;),</span> <span class="pre">('card',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;),</span> <span class="pre">('refid',</span> <span class="pre">&lt;django.db.models.fields.IntegerField&gt;),</span> <span class="pre">('amount',</span> <span class="pre">&lt;django.db.models.fields.PositiveBigIntegerField&gt;),</span> <span class="pre">('created_at',</span> <span class="pre">&lt;django.db.models.fields.DateTimeField&gt;),</span> <span class="pre">('status',</span> <span class="pre">&lt;django.db.models.fields.IntegerField&gt;),</span> <span class="pre">('order',</span> <span class="pre">&lt;django.db.models.fields.related.ForeignKey&gt;)]&gt;,</span> <span class="pre">&lt;AddField</span>&#160; <span class="pre">model_name='order',</span> <span class="pre">name='package',</span> <span class="pre">field=&lt;django.db.models.fields.related.ForeignKey&gt;&gt;,</span> <span class="pre">&lt;AddField</span>&#160; <span class="pre">model_name='order',</span> <span class="pre">name='user',</span> <span class="pre">field=&lt;django.db.models.fields.related.ForeignKey&gt;&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0040_order_package_payment_order_package_order_user.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0041_ad_fori_count_ad_nardeban_count_ad_vip_count">
+<span id="post-manager-migrations-0041-ad-fori-count-ad-nardeban-count-ad-vip-count-module"></span><h2>post_manager.migrations.0041_ad_fori_count_ad_nardeban_count_ad_vip_count module<a class="headerlink" href="#module-post_manager.migrations.0041_ad_fori_count_ad_nardeban_count_ad_vip_count" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0041_ad_fori_count_ad_nardeban_count_ad_vip_count.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0041_ad_fori_count_ad_nardeban_count_ad_vip_count.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0041_ad_fori_count_ad_nardeban_count_ad_vip_count.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0041_ad_fori_count_ad_nardeban_count_ad_vip_count.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0040_order_package_payment_order_package_order_user')]</span></em><a class="headerlink" href="#post_manager.migrations.0041_ad_fori_count_ad_nardeban_count_ad_vip_count.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0041_ad_fori_count_ad_nardeban_count_ad_vip_count.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AddField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='fori_count',</span> <span class="pre">field=&lt;django.db.models.fields.BooleanField&gt;&gt;,</span> <span class="pre">&lt;AddField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='nardeban_count',</span> <span class="pre">field=&lt;django.db.models.fields.DateTimeField&gt;&gt;,</span> <span class="pre">&lt;AddField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='vip_count',</span> <span class="pre">field=&lt;django.db.models.fields.DateTimeField&gt;&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0041_ad_fori_count_ad_nardeban_count_ad_vip_count.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0042_alter_order_ad">
+<span id="post-manager-migrations-0042-alter-order-ad-module"></span><h2>post_manager.migrations.0042_alter_order_ad module<a class="headerlink" href="#module-post_manager.migrations.0042_alter_order_ad" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0042_alter_order_ad.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0042_alter_order_ad.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0042_alter_order_ad.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0042_alter_order_ad.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0041_ad_fori_count_ad_nardeban_count_ad_vip_count')]</span></em><a class="headerlink" href="#post_manager.migrations.0042_alter_order_ad.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0042_alter_order_ad.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AlterField</span>&#160; <span class="pre">model_name='order',</span> <span class="pre">name='ad',</span> <span class="pre">field=&lt;django.db.models.fields.related.ForeignKey&gt;&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0042_alter_order_ad.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0043_nardebanad">
+<span id="post-manager-migrations-0043-nardebanad-module"></span><h2>post_manager.migrations.0043_nardebanad module<a class="headerlink" href="#module-post_manager.migrations.0043_nardebanad" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0043_nardebanad.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0043_nardebanad.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0043_nardebanad.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0043_nardebanad.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('user_area',</span> <span class="pre">'__first__'),</span> <span class="pre">('post_manager',</span> <span class="pre">'0042_alter_order_ad')]</span></em><a class="headerlink" href="#post_manager.migrations.0043_nardebanad.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0043_nardebanad.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;CreateModel</span>&#160; <span class="pre">name='NardebanAd',</span> <span class="pre">fields=[('id',</span> <span class="pre">&lt;django.db.models.fields.BigAutoField&gt;),</span> <span class="pre">('created_at',</span> <span class="pre">&lt;django.db.models.fields.DateTimeField&gt;),</span> <span class="pre">('expire_at',</span> <span class="pre">&lt;django.db.models.fields.DateTimeField&gt;),</span> <span class="pre">('ad',</span> <span class="pre">&lt;django.db.models.fields.related.ForeignKey&gt;),</span> <span class="pre">('user',</span> <span class="pre">&lt;django.db.models.fields.related.ForeignKey&gt;)]&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0043_nardebanad.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0044_alter_ad_nardeban_count">
+<span id="post-manager-migrations-0044-alter-ad-nardeban-count-module"></span><h2>post_manager.migrations.0044_alter_ad_nardeban_count module<a class="headerlink" href="#module-post_manager.migrations.0044_alter_ad_nardeban_count" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0044_alter_ad_nardeban_count.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0044_alter_ad_nardeban_count.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0044_alter_ad_nardeban_count.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0044_alter_ad_nardeban_count.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0043_nardebanad')]</span></em><a class="headerlink" href="#post_manager.migrations.0044_alter_ad_nardeban_count.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0044_alter_ad_nardeban_count.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AlterField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='nardeban_count',</span> <span class="pre">field=&lt;django.db.models.fields.IntegerField&gt;&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0044_alter_ad_nardeban_count.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0045_packageoption_delete_nardebanad">
+<span id="post-manager-migrations-0045-packageoption-delete-nardebanad-module"></span><h2>post_manager.migrations.0045_packageoption_delete_nardebanad module<a class="headerlink" href="#module-post_manager.migrations.0045_packageoption_delete_nardebanad" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0045_packageoption_delete_nardebanad.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0045_packageoption_delete_nardebanad.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0045_packageoption_delete_nardebanad.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0045_packageoption_delete_nardebanad.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0044_alter_ad_nardeban_count')]</span></em><a class="headerlink" href="#post_manager.migrations.0045_packageoption_delete_nardebanad.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0045_packageoption_delete_nardebanad.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;CreateModel</span>&#160; <span class="pre">name='PackageOption',</span> <span class="pre">fields=[('id',</span> <span class="pre">&lt;django.db.models.fields.BigAutoField&gt;),</span> <span class="pre">('subject_type',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;),</span> <span class="pre">('created_at',</span> <span class="pre">&lt;django.db.models.fields.DateTimeField&gt;),</span> <span class="pre">('ad',</span> <span class="pre">&lt;django.db.models.fields.related.ForeignKey&gt;)]&gt;,</span> <span class="pre">&lt;DeleteModel</span>&#160; <span class="pre">name='NardebanAd'&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0045_packageoption_delete_nardebanad.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0046_remove_ad_fori_count_remove_ad_nardeban_count_and_more">
+<span id="post-manager-migrations-0046-remove-ad-fori-count-remove-ad-nardeban-count-and-more-module"></span><h2>post_manager.migrations.0046_remove_ad_fori_count_remove_ad_nardeban_count_and_more module<a class="headerlink" href="#module-post_manager.migrations.0046_remove_ad_fori_count_remove_ad_nardeban_count_and_more" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0046_remove_ad_fori_count_remove_ad_nardeban_count_and_more.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0046_remove_ad_fori_count_remove_ad_nardeban_count_and_more.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0046_remove_ad_fori_count_remove_ad_nardeban_count_and_more.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0046_remove_ad_fori_count_remove_ad_nardeban_count_and_more.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0045_packageoption_delete_nardebanad')]</span></em><a class="headerlink" href="#post_manager.migrations.0046_remove_ad_fori_count_remove_ad_nardeban_count_and_more.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0046_remove_ad_fori_count_remove_ad_nardeban_count_and_more.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;RemoveField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='fori_count'&gt;,</span> <span class="pre">&lt;RemoveField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='nardeban_count'&gt;,</span> <span class="pre">&lt;RemoveField</span>&#160; <span class="pre">model_name='ad',</span> <span class="pre">name='vip_count'&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0046_remove_ad_fori_count_remove_ad_nardeban_count_and_more.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0047_alter_packageoption_created_at">
+<span id="post-manager-migrations-0047-alter-packageoption-created-at-module"></span><h2>post_manager.migrations.0047_alter_packageoption_created_at module<a class="headerlink" href="#module-post_manager.migrations.0047_alter_packageoption_created_at" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0047_alter_packageoption_created_at.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0047_alter_packageoption_created_at.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0047_alter_packageoption_created_at.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0047_alter_packageoption_created_at.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0046_remove_ad_fori_count_remove_ad_nardeban_count_and_more')]</span></em><a class="headerlink" href="#post_manager.migrations.0047_alter_packageoption_created_at.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0047_alter_packageoption_created_at.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AlterField</span>&#160; <span class="pre">model_name='packageoption',</span> <span class="pre">name='created_at',</span> <span class="pre">field=&lt;django.db.models.fields.DateTimeField&gt;&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0047_alter_packageoption_created_at.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0048_alter_packageoption_subject_type">
+<span id="post-manager-migrations-0048-alter-packageoption-subject-type-module"></span><h2>post_manager.migrations.0048_alter_packageoption_subject_type module<a class="headerlink" href="#module-post_manager.migrations.0048_alter_packageoption_subject_type" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0048_alter_packageoption_subject_type.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0048_alter_packageoption_subject_type.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0048_alter_packageoption_subject_type.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0048_alter_packageoption_subject_type.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0047_alter_packageoption_created_at')]</span></em><a class="headerlink" href="#post_manager.migrations.0048_alter_packageoption_subject_type.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0048_alter_packageoption_subject_type.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AlterField</span>&#160; <span class="pre">model_name='packageoption',</span> <span class="pre">name='subject_type',</span> <span class="pre">field=&lt;django.db.models.fields.CharField&gt;&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0048_alter_packageoption_subject_type.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0049_package_description">
+<span id="post-manager-migrations-0049-package-description-module"></span><h2>post_manager.migrations.0049_package_description module<a class="headerlink" href="#module-post_manager.migrations.0049_package_description" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0049_package_description.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0049_package_description.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0049_package_description.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0049_package_description.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0048_alter_packageoption_subject_type')]</span></em><a class="headerlink" href="#post_manager.migrations.0049_package_description.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0049_package_description.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AddField</span>&#160; <span class="pre">model_name='package',</span> <span class="pre">name='description',</span> <span class="pre">field=&lt;django.db.models.fields.TextField&gt;,</span> <span class="pre">preserve_default=False&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0049_package_description.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0050_remove_package_description">
+<span id="post-manager-migrations-0050-remove-package-description-module"></span><h2>post_manager.migrations.0050_remove_package_description module<a class="headerlink" href="#module-post_manager.migrations.0050_remove_package_description" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0050_remove_package_description.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0050_remove_package_description.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0050_remove_package_description.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0050_remove_package_description.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0049_package_description')]</span></em><a class="headerlink" href="#post_manager.migrations.0050_remove_package_description.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0050_remove_package_description.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;RemoveField</span>&#160; <span class="pre">model_name='package',</span> <span class="pre">name='description'&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0050_remove_package_description.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0051_vipsms">
+<span id="post-manager-migrations-0051-vipsms-module"></span><h2>post_manager.migrations.0051_vipsms module<a class="headerlink" href="#module-post_manager.migrations.0051_vipsms" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0051_vipsms.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0051_vipsms.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0051_vipsms.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0051_vipsms.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('user_area',</span> <span class="pre">'__first__'),</span> <span class="pre">('post_manager',</span> <span class="pre">'0050_remove_package_description')]</span></em><a class="headerlink" href="#post_manager.migrations.0051_vipsms.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0051_vipsms.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;CreateModel</span>&#160; <span class="pre">name='VipSms',</span> <span class="pre">fields=[('id',</span> <span class="pre">&lt;django.db.models.fields.BigAutoField&gt;),</span> <span class="pre">('status',</span> <span class="pre">&lt;django.db.models.fields.BooleanField&gt;),</span> <span class="pre">('created_at',</span> <span class="pre">&lt;django.db.models.fields.DateTimeField&gt;),</span> <span class="pre">('ad',</span> <span class="pre">&lt;django.db.models.fields.related.ForeignKey&gt;),</span> <span class="pre">('user',</span> <span class="pre">&lt;django.db.models.fields.related.ForeignKey&gt;)]&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0051_vipsms.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0052_alter_vipsms_options_remove_vipsms_status">
+<span id="post-manager-migrations-0052-alter-vipsms-options-remove-vipsms-status-module"></span><h2>post_manager.migrations.0052_alter_vipsms_options_remove_vipsms_status module<a class="headerlink" href="#module-post_manager.migrations.0052_alter_vipsms_options_remove_vipsms_status" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0052_alter_vipsms_options_remove_vipsms_status.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0052_alter_vipsms_options_remove_vipsms_status.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0052_alter_vipsms_options_remove_vipsms_status.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0052_alter_vipsms_options_remove_vipsms_status.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0051_vipsms')]</span></em><a class="headerlink" href="#post_manager.migrations.0052_alter_vipsms_options_remove_vipsms_status.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0052_alter_vipsms_options_remove_vipsms_status.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AlterModelOptions</span>&#160; <span class="pre">name='vipsms',</span> <span class="pre">options={'verbose_name':</span> <span class="pre">'vip</span> <span class="pre">sms',</span> <span class="pre">'verbose_name_plural':</span> <span class="pre">'vip</span> <span class="pre">sms'}&gt;,</span> <span class="pre">&lt;RemoveField</span>&#160; <span class="pre">model_name='vipsms',</span> <span class="pre">name='status'&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0052_alter_vipsms_options_remove_vipsms_status.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0053_packageoption_updated_at">
+<span id="post-manager-migrations-0053-packageoption-updated-at-module"></span><h2>post_manager.migrations.0053_packageoption_updated_at module<a class="headerlink" href="#module-post_manager.migrations.0053_packageoption_updated_at" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0053_packageoption_updated_at.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0053_packageoption_updated_at.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0053_packageoption_updated_at.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0053_packageoption_updated_at.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0052_alter_vipsms_options_remove_vipsms_status')]</span></em><a class="headerlink" href="#post_manager.migrations.0053_packageoption_updated_at.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0053_packageoption_updated_at.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AddField</span>&#160; <span class="pre">model_name='packageoption',</span> <span class="pre">name='updated_at',</span> <span class="pre">field=&lt;django.db.models.fields.DateTimeField&gt;&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0053_packageoption_updated_at.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0054_remove_packageoption_updated_at">
+<span id="post-manager-migrations-0054-remove-packageoption-updated-at-module"></span><h2>post_manager.migrations.0054_remove_packageoption_updated_at module<a class="headerlink" href="#module-post_manager.migrations.0054_remove_packageoption_updated_at" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0054_remove_packageoption_updated_at.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0054_remove_packageoption_updated_at.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0054_remove_packageoption_updated_at.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0054_remove_packageoption_updated_at.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0053_packageoption_updated_at')]</span></em><a class="headerlink" href="#post_manager.migrations.0054_remove_packageoption_updated_at.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0054_remove_packageoption_updated_at.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;RemoveField</span>&#160; <span class="pre">model_name='packageoption',</span> <span class="pre">name='updated_at'&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0054_remove_packageoption_updated_at.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0055_package_description">
+<span id="post-manager-migrations-0055-package-description-module"></span><h2>post_manager.migrations.0055_package_description module<a class="headerlink" href="#module-post_manager.migrations.0055_package_description" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0055_package_description.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0055_package_description.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0055_package_description.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0055_package_description.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0054_remove_packageoption_updated_at')]</span></em><a class="headerlink" href="#post_manager.migrations.0055_package_description.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0055_package_description.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AddField</span>&#160; <span class="pre">model_name='package',</span> <span class="pre">name='description',</span> <span class="pre">field=&lt;django.db.models.fields.TextField&gt;&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0055_package_description.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations.0056_package_status">
+<span id="post-manager-migrations-0056-package-status-module"></span><h2>post_manager.migrations.0056_package_status module<a class="headerlink" href="#module-post_manager.migrations.0056_package_status" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="post_manager.migrations.0056_package_status.Migration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post_manager.migrations.0056_package_status.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post_manager.migrations.0056_package_status.Migration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0056_package_status.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('post_manager',</span> <span class="pre">'0055_package_description')]</span></em><a class="headerlink" href="#post_manager.migrations.0056_package_status.Migration.dependencies" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="post_manager.migrations.0056_package_status.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;AddField</span>&#160; <span class="pre">model_name='package',</span> <span class="pre">name='status',</span> <span class="pre">field=&lt;django.db.models.fields.BooleanField&gt;&gt;]</span></em><a class="headerlink" href="#post_manager.migrations.0056_package_status.Migration.operations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-post_manager.migrations">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-post_manager.migrations" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, shima.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

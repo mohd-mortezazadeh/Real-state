@@ -1,0 +1,647 @@
+@import "fonts.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-primary-lin {
+    background-image: linear-gradient(244.68deg, #1a77f3 16.32%, #76b1ff 80.04%);
+}
+
+/*show more style*/
+.gradient::before {
+    content:'';  height:150px; position:absolute; bottom:0px; left:0; width:100%; background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 70%); transition:height .25s ease;
+}
+.show.gradient::before { height:50px;}
+
+
+/*scrollbar Style*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+.filter-box::-webkit-scrollbar {
+    display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 12px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 12px;
+
+    background: #347fec;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/*box shadow styles*/
+
+.box-shadow-1 {
+    box-shadow: 0px 4px 30px rgba(0, 38, 84, 0.11);
+}
+
+.box-shadow-2 {
+    box-shadow: 0px 3.25975px 24.4481px rgba(0, 38, 84, 0.11);
+}
+
+.box-shadow-3 {
+    box-shadow: 0px 4px 17px rgba(0, 38, 84, 0.09);
+}
+
+.box-shadow-4 {
+    box-shadow: 0px 3.57143px 26.7857px rgba(0, 38, 84, 0.11);
+}
+
+/* clears the ‘X’ from Internet Explorer */
+input[type="search"]::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input[type="search"]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+/*  custom css for search filters and filterBox */
+
+/* filter button float flipper */
+
+.filter-button-flipper {
+    position: fixed;
+    bottom: 20px;
+    right: 16px;
+    height: 63px;
+    width: 63px;
+    border-radius: 100%;
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+.flipFace {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    backface-visibility: hidden;
+}
+
+.flipBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.rotates {
+    transform: rotateY(180deg);
+}
+
+/* filter select options style */
+
+/*.select_box:after {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    top: 46%;*/
+/*    left: 21px;*/
+/*    display: block;*/
+/*    width: 6px;*/
+/*    height: 6px;*/
+/*    border-left: 2px solid #051429;*/
+/*    border-bottom: 2px solid #051429;*/
+/*    transform: rotate(-45deg);*/
+/*}*/
+
+/*.select_box select {*/
+/*    position: relative;*/
+/*}*/
+
+/* The checkbox-container */
+.checkbox-container {
+    display: flex;
+    position: relative;
+    padding-right: 24px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+
+}
+
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #aaceff;
+    border-radius: 2px;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-container:hover input ~ .checkmark {
+    /*background-color: #005adc;*/
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #005adc;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*  property foori toggle checkbox  */
+
+.foori-swtich {
+    display: inline-block;
+    height: 26px;
+    position: relative;
+    width: 50px;
+}
+
+.foori-swtich input {
+    display: none;
+}
+
+.foori-slider {
+    background-color: #e3e3e3;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+}
+
+.foori-slider:before {
+    background-color: #737373;
+    bottom: 4px;
+    content: "";
+    height: 18px;
+    left: 4px;
+    position: absolute;
+    transition: 0.4s;
+    width: 18px;
+}
+
+.foori-input:checked + .foori-slider {
+    background-color: #005ADC;
+}
+
+.foori-input:checked + .foori-slider:before {
+    transform: translateX(26px);
+    background-color: #fff;
+    left: 3px;
+}
+
+.foori-slider.round {
+    border-radius: 34px;
+}
+
+.foori-slider.round:before {
+    border-radius: 50%;
+}
+
+
+/* Podcast Player styles */
+
+.podcast-range {
+    position: relative;
+    display: flex;
+    direction: ltr;
+}
+
+.podcast-range .podcast-slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 4px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+
+}
+
+.podcast-range .podcast-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+}
+
+.podcast-range .podcast-thumb {
+    position: absolute;
+    width: 90px;
+    height: 40px;
+    background: white;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    border-radius: 79px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+.podcast-range .podcast-progress {
+    width: 0;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    pointer-events: none;
+    border-radius: 8px;
+}
+
+
+/*multi range styles*/
+
+/*.container {*/
+/*  height: 100vh;*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*}*/
+
+.slider {
+    position: relative;
+    width: 100%;
+}
+
+.slider__track,
+.slider__range,
+.slider__left-value,
+.slider__right-value {
+    position: absolute;
+}
+
+.slider__track,
+.slider__range {
+    border-radius: 3px;
+    height: 2px;
+}
+
+.slider__track {
+    background: #737373;
+    opacity: 0.26;
+    border-radius: 8px;
+
+    width: 100%;
+    z-index: 1;
+}
+
+.slider__range {
+    background-color: #005ADC;
+    z-index: 2;
+}
+
+.slider__left-value,
+.slider__right-value {
+    color: #dee2e6;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.slider__left-value {
+    left: 6px;
+}
+
+.slider__right-value {
+    right: -4px;
+}
+
+/* Removing the default appearance */
+.thumb,
+.thumb::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.thumb {
+    pointer-events: none;
+    position: absolute;
+    height: 0;
+    width: 100%;
+    outline: none;
+
+}
+
+.thumb--zindex-3 {
+    z-index: 3;
+}
+
+.thumb--zindex-4 {
+    z-index: 4;
+}
+
+.thumb--zindex-5 {
+    z-index: 5;
+}
+
+/* For Chrome browsers */
+.thumb::-webkit-slider-thumb {
+    background-color: #005ADC;
+    border: none;
+    border-radius: 50%;
+    /*box-shadow: 0 0 1px 1px #ced4da;*/
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    margin-top: 4px;
+    pointer-events: all;
+    position: relative;
+}
+
+.thumb::-webkit-slider-thumb:active {
+    width: 18px;
+    height: 18px;
+    border: 4px solid;
+    background-color: #ffffff;
+}
+
+/* For Firefox browsers */
+.thumb::-moz-range-thumb {
+    background-color: #005ADC;
+    border: none;
+    border-radius: 50%;
+    /*box-shadow: 0 0 1px 1px #ced4da;*/
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    margin-top: 4px;
+    pointer-events: all;
+    position: relative;
+}
+
+
+/*input number arrows*/
+input.multi-range-input::-webkit-outer-spin-button,
+input.multi-range-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input.multi-range-input[type=number] {
+    -moz-appearance: none;
+}
+
+/*all input type number arrow hidde*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* add property stepper */
+.accomplished {
+    background-color: #005ADC;
+    height: 70px !important;
+    width: 70px !important;
+    box-shadow: 17px 17px 44px -4px rgba(0, 90, 220, 0.26);
+
+}
+
+.completed {
+    background-color: #005ADC;
+    height: 62px !important;
+    width: 62px !important;
+    box-shadow: 17px 17px 44px -4px rgba(0, 90, 220, 0.26);
+
+}
+
+.stepper-step {
+    transform: rotateY(180deg);
+}
+
+.light {
+    width: 62px;
+    height: 62px;
+    background: #e1e1e1;
+}
+
+
+/*counter styles*/
+
+.timer-wrapper {
+    display: flex;
+    justify-content: center;
+
+}
+
+.time-wrapper {
+
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.time-wrapper .time {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(2px);
+    opacity: 1;
+    transition: all 0.2s;
+}
+
+.time-wrapper .time.up {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+.time-wrapper .time.down {
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+
+/* add property gallery form */
+.drop-zone {
+    background: rgba(0, 0, 0, 0.05);
+    width: 120px;
+    height: 120px;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    border: 2px dashed rgba(115, 115, 115, 0.5);
+}
+
+.drop-zone p {
+    text-align: center;
+}
+
+
+.drop-thumb {
+    display: flex;
+    flex-direction: row;
+}
+
+.thumbInner {
+    display: flex;
+    flex-direction: row;
+    row-gap: 10px;
+}
+
+.primary-container {
+    border: 2px dashed rgba(115, 115, 115, 0.5);
+    border-radius: 13px;
+}
+
+/* stepper */
+.step .line-right,
+.step .line-left {
+    background: #e8e8e8;
+}
+
+.step-circle {
+    background-color: #ececec;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+}
+
+.active-step {
+    background: #005ADC;
+    box-shadow: 17px 17px 44px -4px rgba(0, 90, 220, 0.20);
+    opacity: 1;
+    width: 74px;
+    height: 74px;
+}
+
+.completed-step {
+    background-color: #005ADC;
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+}
+
+
+.villa:hover + .villa-submenu {
+    display: block;
+}
+
+.villa-submenu {
+    display: none;
+}
+/* ticket bubble */
+.tri-left::after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: auto;
+    left: 0px;
+    top: auto;
+    bottom: -10px;
+    border: 10px solid;
+    background-color: transparent;
+    border-color: #F4F6F8 #F4F6F8 white transparent;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.tri-right::after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: auto;
+    right: 0px;
+    top: auto;
+    bottom: -10px;
+    border: 10px solid;
+    background-color: transparent;
+    border-color: #005ADC #005ADC white transparent;
+}

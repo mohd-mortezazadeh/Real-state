@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Views &mdash; villaarzan 1.0.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Welcome to villaarzan’s documentation!" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            villaarzan
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Views</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#user_area.views.AdVipView"><code class="docutils literal notranslate"><span class="pre">AdVipView</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.AdVipView.authentication_classes"><code class="docutils literal notranslate"><span class="pre">AdVipView.authentication_classes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.AdVipView.basename"><code class="docutils literal notranslate"><span class="pre">AdVipView.basename</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.AdVipView.description"><code class="docutils literal notranslate"><span class="pre">AdVipView.description</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.AdVipView.detail"><code class="docutils literal notranslate"><span class="pre">AdVipView.detail</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.AdVipView.get_queryset"><code class="docutils literal notranslate"><span class="pre">AdVipView.get_queryset()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.AdVipView.get_serializer_class"><code class="docutils literal notranslate"><span class="pre">AdVipView.get_serializer_class()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.AdVipView.name"><code class="docutils literal notranslate"><span class="pre">AdVipView.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.AdVipView.permission_classes"><code class="docutils literal notranslate"><span class="pre">AdVipView.permission_classes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.AdVipView.queryset"><code class="docutils literal notranslate"><span class="pre">AdVipView.queryset</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.AdVipView.serializer_class"><code class="docutils literal notranslate"><span class="pre">AdVipView.serializer_class</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.AdVipView.suffix"><code class="docutils literal notranslate"><span class="pre">AdVipView.suffix</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#user_area.views.AddPackageView"><code class="docutils literal notranslate"><span class="pre">AddPackageView</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.AddPackageView.authentication_classes"><code class="docutils literal notranslate"><span class="pre">AddPackageView.authentication_classes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.AddPackageView.get"><code class="docutils literal notranslate"><span class="pre">AddPackageView.get()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.AddPackageView.permission_classes"><code class="docutils literal notranslate"><span class="pre">AddPackageView.permission_classes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.AddPackageView.post"><code class="docutils literal notranslate"><span class="pre">AddPackageView.post()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#user_area.views.AuthenticatedView"><code class="docutils literal notranslate"><span class="pre">AuthenticatedView</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.AuthenticatedView.authentication_classes"><code class="docutils literal notranslate"><span class="pre">AuthenticatedView.authentication_classes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.AuthenticatedView.permission_classes"><code class="docutils literal notranslate"><span class="pre">AuthenticatedView.permission_classes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.AuthenticatedView.post"><code class="docutils literal notranslate"><span class="pre">AuthenticatedView.post()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#user_area.views.CheckPasswordView"><code class="docutils literal notranslate"><span class="pre">CheckPasswordView</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.CheckPasswordView.authentication_classes"><code class="docutils literal notranslate"><span class="pre">CheckPasswordView.authentication_classes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.CheckPasswordView.permission_classes"><code class="docutils literal notranslate"><span class="pre">CheckPasswordView.permission_classes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.CheckPasswordView.post"><code class="docutils literal notranslate"><span class="pre">CheckPasswordView.post()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#user_area.views.CheckPhoneView"><code class="docutils literal notranslate"><span class="pre">CheckPhoneView</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.CheckPhoneView.authentication_classes"><code class="docutils literal notranslate"><span class="pre">CheckPhoneView.authentication_classes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.CheckPhoneView.permission_classes"><code class="docutils literal notranslate"><span class="pre">CheckPhoneView.permission_classes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.CheckPhoneView.post"><code class="docutils literal notranslate"><span class="pre">CheckPhoneView.post()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#user_area.views.CityView"><code class="docutils literal notranslate"><span class="pre">CityView</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.CityView.authentication_classes"><code class="docutils literal notranslate"><span class="pre">CityView.authentication_classes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.CityView.get"><code class="docutils literal notranslate"><span class="pre">CityView.get()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.CityView.permission_classes"><code class="docutils literal notranslate"><span class="pre">CityView.permission_classes</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#user_area.views.CompanyView"><code class="docutils literal notranslate"><span class="pre">CompanyView</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.CompanyView.authentication_classes"><code class="docutils literal notranslate"><span class="pre">CompanyView.authentication_classes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.CompanyView.get"><code class="docutils literal notranslate"><span class="pre">CompanyView.get()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.CompanyView.permission_classes"><code class="docutils literal notranslate"><span class="pre">CompanyView.permission_classes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.CompanyView.serializer_class"><code class="docutils literal notranslate"><span class="pre">CompanyView.serializer_class</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#user_area.views.ForgotPasswordView"><code class="docutils literal notranslate"><span class="pre">ForgotPasswordView</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.ForgotPasswordView.authentication_classes"><code class="docutils literal notranslate"><span class="pre">ForgotPasswordView.authentication_classes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.ForgotPasswordView.permission_classes"><code class="docutils literal notranslate"><span class="pre">ForgotPasswordView.permission_classes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.ForgotPasswordView.post"><code class="docutils literal notranslate"><span class="pre">ForgotPasswordView.post()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#user_area.views.LogoutView"><code class="docutils literal notranslate"><span class="pre">LogoutView</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.LogoutView.authentication_classes"><code class="docutils literal notranslate"><span class="pre">LogoutView.authentication_classes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.LogoutView.permission_classes"><code class="docutils literal notranslate"><span class="pre">LogoutView.permission_classes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.LogoutView.permission_denied"><code class="docutils literal notranslate"><span class="pre">LogoutView.permission_denied()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.LogoutView.post"><code class="docutils literal notranslate"><span class="pre">LogoutView.post()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#user_area.views.OrderPaymentView"><code class="docutils literal notranslate"><span class="pre">OrderPaymentView</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.OrderPaymentView.authentication_classes"><code class="docutils literal notranslate"><span class="pre">OrderPaymentView.authentication_classes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.OrderPaymentView.basename"><code class="docutils literal notranslate"><span class="pre">OrderPaymentView.basename</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.OrderPaymentView.create"><code class="docutils literal notranslate"><span class="pre">OrderPaymentView.create()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.OrderPaymentView.description"><code class="docutils literal notranslate"><span class="pre">OrderPaymentView.description</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.OrderPaymentView.detail"><code class="docutils literal notranslate"><span class="pre">OrderPaymentView.detail</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.OrderPaymentView.get_queryset"><code class="docutils literal notranslate"><span class="pre">OrderPaymentView.get_queryset()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.OrderPaymentView.name"><code class="docutils literal notranslate"><span class="pre">OrderPaymentView.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.OrderPaymentView.pagination_class"><code class="docutils literal notranslate"><span class="pre">OrderPaymentView.pagination_class</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.OrderPaymentView.permission_classes"><code class="docutils literal notranslate"><span class="pre">OrderPaymentView.permission_classes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.OrderPaymentView.queryset"><code class="docutils literal notranslate"><span class="pre">OrderPaymentView.queryset</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.OrderPaymentView.serializer_class"><code class="docutils literal notranslate"><span class="pre">OrderPaymentView.serializer_class</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.OrderPaymentView.suffix"><code class="docutils literal notranslate"><span class="pre">OrderPaymentView.suffix</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#user_area.views.RoleView"><code class="docutils literal notranslate"><span class="pre">RoleView</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.RoleView.authentication_classes"><code class="docutils literal notranslate"><span class="pre">RoleView.authentication_classes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.RoleView.get"><code class="docutils literal notranslate"><span class="pre">RoleView.get()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.RoleView.permission_classes"><code class="docutils literal notranslate"><span class="pre">RoleView.permission_classes</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#user_area.views.UserView"><code class="docutils literal notranslate"><span class="pre">UserView</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.UserView.authentication_classes"><code class="docutils literal notranslate"><span class="pre">UserView.authentication_classes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.UserView.get"><code class="docutils literal notranslate"><span class="pre">UserView.get()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.UserView.permission_classes"><code class="docutils literal notranslate"><span class="pre">UserView.permission_classes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.UserView.permission_denied"><code class="docutils literal notranslate"><span class="pre">UserView.permission_denied()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#user_area.views.VerifyCodeView"><code class="docutils literal notranslate"><span class="pre">VerifyCodeView</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.VerifyCodeView.authentication_classes"><code class="docutils literal notranslate"><span class="pre">VerifyCodeView.authentication_classes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.VerifyCodeView.permission_classes"><code class="docutils literal notranslate"><span class="pre">VerifyCodeView.permission_classes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.VerifyCodeView.post"><code class="docutils literal notranslate"><span class="pre">VerifyCodeView.post()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#user_area.views.VerifyView"><code class="docutils literal notranslate"><span class="pre">VerifyView</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.VerifyView.authentication_classes"><code class="docutils literal notranslate"><span class="pre">VerifyView.authentication_classes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.VerifyView.get"><code class="docutils literal notranslate"><span class="pre">VerifyView.get()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.VerifyView.permission_classes"><code class="docutils literal notranslate"><span class="pre">VerifyView.permission_classes</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#user_area.views.VipNotifView"><code class="docutils literal notranslate"><span class="pre">VipNotifView</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.VipNotifView.authentication_classes"><code class="docutils literal notranslate"><span class="pre">VipNotifView.authentication_classes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.VipNotifView.permission_classes"><code class="docutils literal notranslate"><span class="pre">VipNotifView.permission_classes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user_area.views.VipNotifView.post"><code class="docutils literal notranslate"><span class="pre">VipNotifView.post()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">villaarzan</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Views</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/modules/views.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-user_area.views">
+<span id="views"></span><h1>Views<a class="headerlink" href="#module-user_area.views" title="Permalink to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="user_area.views.AdVipView">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">user_area.views.</span></span><span class="sig-name descname"><span class="pre">AdVipView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.AdVipView" title="Permalink to this definition"></a></dt>
+<dd><dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.AdVipView.authentication_classes">
+<span class="sig-name descname"><span class="pre">authentication_classes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(&lt;class</span> <span class="pre">'user_area.functions.CsrfExemptSessionAuthentication'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'rest_framework.authentication.BasicAuthentication'&gt;)</span></em><a class="headerlink" href="#user_area.views.AdVipView.authentication_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.AdVipView.basename">
+<span class="sig-name descname"><span class="pre">basename</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#user_area.views.AdVipView.basename" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.AdVipView.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#user_area.views.AdVipView.description" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.AdVipView.detail">
+<span class="sig-name descname"><span class="pre">detail</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#user_area.views.AdVipView.detail" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="user_area.views.AdVipView.get_queryset">
+<span class="sig-name descname"><span class="pre">get_queryset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.AdVipView.get_queryset" title="Permalink to this definition"></a></dt>
+<dd><p>Get the list of items for this view.
+This must be an iterable, and may be a queryset.
+Defaults to using <cite>self.queryset</cite>.</p>
+<p>This method should always be used rather than accessing <cite>self.queryset</cite>
+directly, as <cite>self.queryset</cite> gets evaluated only once, and those results
+are cached for all subsequent requests.</p>
+<p>You may want to override this if you need to provide different
+querysets depending on the incoming request.</p>
+<p>(Eg. return a list of items that is specific to the user)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="user_area.views.AdVipView.get_serializer_class">
+<span class="sig-name descname"><span class="pre">get_serializer_class</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.AdVipView.get_serializer_class" title="Permalink to this definition"></a></dt>
+<dd><p>Return the class to use for the serializer.
+Defaults to using <cite>self.serializer_class</cite>.</p>
+<p>You may want to override this if you need to provide different
+serializations depending on the incoming request.</p>
+<p>(Eg. admins get full serialization, others get basic serialization)</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.AdVipView.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#user_area.views.AdVipView.name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.AdVipView.permission_classes">
+<span class="sig-name descname"><span class="pre">permission_classes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;class</span> <span class="pre">'user_area.permissions.AllowAnyUser'&gt;]</span></em><a class="headerlink" href="#user_area.views.AdVipView.permission_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.AdVipView.queryset">
+<span class="sig-name descname"><span class="pre">queryset</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;QuerySet</span> <span class="pre">[&lt;Ad:</span> <span class="pre">test</span> <span class="pre">this</span> <span class="pre">is</span> <span class="pre">-</span> <span class="pre">382&gt;,</span> <span class="pre">&lt;Ad:</span> <span class="pre">kjnskd</span> <span class="pre">-</span> <span class="pre">383&gt;,</span> <span class="pre">&lt;Ad:</span> <span class="pre">xascasc</span> <span class="pre">-</span> <span class="pre">385&gt;,</span> <span class="pre">&lt;Ad:</span> <span class="pre">sdfsdfsdf</span> <span class="pre">-</span> <span class="pre">386&gt;,</span> <span class="pre">&lt;Ad:</span> <span class="pre">sfsdfsdf</span> <span class="pre">-</span> <span class="pre">387&gt;,</span> <span class="pre">&lt;Ad:</span> <span class="pre">this</span> <span class="pre">is</span> <span class="pre">pending</span> <span class="pre">-</span> <span class="pre">395&gt;,</span> <span class="pre">&lt;Ad:</span> <span class="pre">this</span> <span class="pre">is</span> <span class="pre">pending</span> <span class="pre">-</span> <span class="pre">398&gt;,</span> <span class="pre">&lt;Ad:</span> <span class="pre">this</span> <span class="pre">is</span> <span class="pre">pending</span> <span class="pre">-</span> <span class="pre">407&gt;,</span> <span class="pre">&lt;Ad:</span> <span class="pre">this</span> <span class="pre">is</span> <span class="pre">pending</span> <span class="pre">-</span> <span class="pre">408&gt;,</span> <span class="pre">&lt;Ad:</span> <span class="pre">this</span> <span class="pre">is</span> <span class="pre">pending</span> <span class="pre">-</span> <span class="pre">409&gt;,</span> <span class="pre">&lt;Ad:</span> <span class="pre">this</span> <span class="pre">is</span> <span class="pre">pending</span> <span class="pre">-</span> <span class="pre">411&gt;,</span> <span class="pre">&lt;Ad:</span> <span class="pre">1.....</span> <span class="pre">-</span> <span class="pre">463&gt;,</span> <span class="pre">&lt;Ad:</span> <span class="pre">1.....</span> <span class="pre">-</span> <span class="pre">464&gt;,</span> <span class="pre">&lt;Ad:</span> <span class="pre">1.....</span> <span class="pre">-</span> <span class="pre">465&gt;,</span> <span class="pre">&lt;Ad:</span> <span class="pre">1.....</span> <span class="pre">-</span> <span class="pre">466&gt;,</span> <span class="pre">&lt;Ad:</span> <span class="pre">this</span> <span class="pre">is</span> <span class="pre">pending</span> <span class="pre">-</span> <span class="pre">467&gt;,</span> <span class="pre">&lt;Ad:</span> <span class="pre">this</span> <span class="pre">is</span> <span class="pre">pending</span> <span class="pre">-</span> <span class="pre">468&gt;,</span> <span class="pre">&lt;Ad:</span> <span class="pre">1.....</span> <span class="pre">-</span> <span class="pre">469&gt;,</span> <span class="pre">&lt;Ad:</span> <span class="pre">1.....</span> <span class="pre">-</span> <span class="pre">470&gt;,</span> <span class="pre">&lt;Ad:</span> <span class="pre">1.....</span> <span class="pre">-</span> <span class="pre">471&gt;,</span> <span class="pre">'...(remaining</span> <span class="pre">elements</span> <span class="pre">truncated)...']&gt;</span></em><a class="headerlink" href="#user_area.views.AdVipView.queryset" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.AdVipView.serializer_class">
+<span class="sig-name descname"><span class="pre">serializer_class</span></span><a class="headerlink" href="#user_area.views.AdVipView.serializer_class" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="../post_manager.html#post_manager.serializers.AdSerializer" title="post_manager.serializers.AdSerializer"><code class="xref py py-class docutils literal notranslate"><span class="pre">AdSerializer</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.AdVipView.suffix">
+<span class="sig-name descname"><span class="pre">suffix</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#user_area.views.AdVipView.suffix" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="user_area.views.AddPackageView">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">user_area.views.</span></span><span class="sig-name descname"><span class="pre">AddPackageView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.AddPackageView" title="Permalink to this definition"></a></dt>
+<dd><dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.AddPackageView.authentication_classes">
+<span class="sig-name descname"><span class="pre">authentication_classes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(&lt;class</span> <span class="pre">'user_area.functions.CsrfExemptSessionAuthentication'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'rest_framework.authentication.BasicAuthentication'&gt;)</span></em><a class="headerlink" href="#user_area.views.AddPackageView.authentication_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="user_area.views.AddPackageView.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.AddPackageView.get" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.AddPackageView.permission_classes">
+<span class="sig-name descname"><span class="pre">permission_classes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;class</span> <span class="pre">'user_area.permissions.IsAuthenticatedUser'&gt;]</span></em><a class="headerlink" href="#user_area.views.AddPackageView.permission_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="user_area.views.AddPackageView.post">
+<span class="sig-name descname"><span class="pre">post</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.AddPackageView.post" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="user_area.views.AuthenticatedView">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">user_area.views.</span></span><span class="sig-name descname"><span class="pre">AuthenticatedView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.AuthenticatedView" title="Permalink to this definition"></a></dt>
+<dd><p>register user and send otp code</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.AuthenticatedView.authentication_classes">
+<span class="sig-name descname"><span class="pre">authentication_classes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(&lt;class</span> <span class="pre">'user_area.functions.CsrfExemptSessionAuthentication'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'rest_framework.authentication.BasicAuthentication'&gt;)</span></em><a class="headerlink" href="#user_area.views.AuthenticatedView.authentication_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.AuthenticatedView.permission_classes">
+<span class="sig-name descname"><span class="pre">permission_classes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;class</span> <span class="pre">'user_area.permissions.AllowAnyUser'&gt;]</span></em><a class="headerlink" href="#user_area.views.AuthenticatedView.permission_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="user_area.views.AuthenticatedView.post">
+<span class="sig-name descname"><span class="pre">post</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.AuthenticatedView.post" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="user_area.views.CheckPasswordView">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">user_area.views.</span></span><span class="sig-name descname"><span class="pre">CheckPasswordView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.CheckPasswordView" title="Permalink to this definition"></a></dt>
+<dd><p>check password if user save password</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.CheckPasswordView.authentication_classes">
+<span class="sig-name descname"><span class="pre">authentication_classes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(&lt;class</span> <span class="pre">'user_area.functions.CsrfExemptSessionAuthentication'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'rest_framework.authentication.BasicAuthentication'&gt;)</span></em><a class="headerlink" href="#user_area.views.CheckPasswordView.authentication_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.CheckPasswordView.permission_classes">
+<span class="sig-name descname"><span class="pre">permission_classes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;class</span> <span class="pre">'user_area.permissions.AllowAnyUser'&gt;]</span></em><a class="headerlink" href="#user_area.views.CheckPasswordView.permission_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="user_area.views.CheckPasswordView.post">
+<span class="sig-name descname"><span class="pre">post</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.CheckPasswordView.post" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="user_area.views.CheckPhoneView">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">user_area.views.</span></span><span class="sig-name descname"><span class="pre">CheckPhoneView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.CheckPhoneView" title="Permalink to this definition"></a></dt>
+<dd><p>Check phone number if it’s not exist create new user
+check if user exist (send otp code)
+check if user exist and has password
+check if user rejected or not</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.CheckPhoneView.authentication_classes">
+<span class="sig-name descname"><span class="pre">authentication_classes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(&lt;class</span> <span class="pre">'user_area.functions.CsrfExemptSessionAuthentication'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'rest_framework.authentication.BasicAuthentication'&gt;)</span></em><a class="headerlink" href="#user_area.views.CheckPhoneView.authentication_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.CheckPhoneView.permission_classes">
+<span class="sig-name descname"><span class="pre">permission_classes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;class</span> <span class="pre">'user_area.permissions.AllowAnyUser'&gt;]</span></em><a class="headerlink" href="#user_area.views.CheckPhoneView.permission_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="user_area.views.CheckPhoneView.post">
+<span class="sig-name descname"><span class="pre">post</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.CheckPhoneView.post" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="user_area.views.CityView">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">user_area.views.</span></span><span class="sig-name descname"><span class="pre">CityView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.CityView" title="Permalink to this definition"></a></dt>
+<dd><p>show all cities for user</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.CityView.authentication_classes">
+<span class="sig-name descname"><span class="pre">authentication_classes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(&lt;class</span> <span class="pre">'user_area.functions.CsrfExemptSessionAuthentication'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'rest_framework.authentication.BasicAuthentication'&gt;)</span></em><a class="headerlink" href="#user_area.views.CityView.authentication_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="user_area.views.CityView.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.CityView.get" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.CityView.permission_classes">
+<span class="sig-name descname"><span class="pre">permission_classes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;class</span> <span class="pre">'user_area.permissions.AllowAnyUser'&gt;]</span></em><a class="headerlink" href="#user_area.views.CityView.permission_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="user_area.views.CompanyView">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">user_area.views.</span></span><span class="sig-name descname"><span class="pre">CompanyView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.CompanyView" title="Permalink to this definition"></a></dt>
+<dd><p>show all companies for real estate
+show all companies for user and filter by status</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.CompanyView.authentication_classes">
+<span class="sig-name descname"><span class="pre">authentication_classes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(&lt;class</span> <span class="pre">'user_area.functions.CsrfExemptSessionAuthentication'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'rest_framework.authentication.BasicAuthentication'&gt;)</span></em><a class="headerlink" href="#user_area.views.CompanyView.authentication_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="user_area.views.CompanyView.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.CompanyView.get" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.CompanyView.permission_classes">
+<span class="sig-name descname"><span class="pre">permission_classes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;class</span> <span class="pre">'user_area.permissions.AllowAnyUser'&gt;]</span></em><a class="headerlink" href="#user_area.views.CompanyView.permission_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.CompanyView.serializer_class">
+<span class="sig-name descname"><span class="pre">serializer_class</span></span><a class="headerlink" href="#user_area.views.CompanyView.serializer_class" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="../user_area.html#user_area.serializers.CompanySerializer" title="user_area.serializers.CompanySerializer"><code class="xref py py-class docutils literal notranslate"><span class="pre">CompanySerializer</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="user_area.views.ForgotPasswordView">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">user_area.views.</span></span><span class="sig-name descname"><span class="pre">ForgotPasswordView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.ForgotPasswordView" title="Permalink to this definition"></a></dt>
+<dd><p>forgot password if user forget password</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.ForgotPasswordView.authentication_classes">
+<span class="sig-name descname"><span class="pre">authentication_classes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(&lt;class</span> <span class="pre">'user_area.functions.CsrfExemptSessionAuthentication'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'rest_framework.authentication.BasicAuthentication'&gt;)</span></em><a class="headerlink" href="#user_area.views.ForgotPasswordView.authentication_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.ForgotPasswordView.permission_classes">
+<span class="sig-name descname"><span class="pre">permission_classes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;class</span> <span class="pre">'user_area.permissions.AllowAnyUser'&gt;]</span></em><a class="headerlink" href="#user_area.views.ForgotPasswordView.permission_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="user_area.views.ForgotPasswordView.post">
+<span class="sig-name descname"><span class="pre">post</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.ForgotPasswordView.post" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="user_area.views.LogoutView">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">user_area.views.</span></span><span class="sig-name descname"><span class="pre">LogoutView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.LogoutView" title="Permalink to this definition"></a></dt>
+<dd><p>logout user and delete cookie</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.LogoutView.authentication_classes">
+<span class="sig-name descname"><span class="pre">authentication_classes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(&lt;class</span> <span class="pre">'user_area.functions.CsrfExemptSessionAuthentication'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'rest_framework.authentication.BasicAuthentication'&gt;)</span></em><a class="headerlink" href="#user_area.views.LogoutView.authentication_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.LogoutView.permission_classes">
+<span class="sig-name descname"><span class="pre">permission_classes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;class</span> <span class="pre">'user_area.permissions.IsAuthenticatedUser'&gt;]</span></em><a class="headerlink" href="#user_area.views.LogoutView.permission_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="user_area.views.LogoutView.permission_denied">
+<span class="sig-name descname"><span class="pre">permission_denied</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">code</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.LogoutView.permission_denied" title="Permalink to this definition"></a></dt>
+<dd><p>If request is not permitted, determine what kind of exception to raise.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="user_area.views.LogoutView.post">
+<span class="sig-name descname"><span class="pre">post</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.LogoutView.post" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="user_area.views.OrderPaymentView">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">user_area.views.</span></span><span class="sig-name descname"><span class="pre">OrderPaymentView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.OrderPaymentView" title="Permalink to this definition"></a></dt>
+<dd><p>This viewset automatically provides orders and payment
+Save order and payment</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.OrderPaymentView.authentication_classes">
+<span class="sig-name descname"><span class="pre">authentication_classes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(&lt;class</span> <span class="pre">'user_area.functions.CsrfExemptSessionAuthentication'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'rest_framework.authentication.BasicAuthentication'&gt;)</span></em><a class="headerlink" href="#user_area.views.OrderPaymentView.authentication_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.OrderPaymentView.basename">
+<span class="sig-name descname"><span class="pre">basename</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#user_area.views.OrderPaymentView.basename" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="user_area.views.OrderPaymentView.create">
+<span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.OrderPaymentView.create" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.OrderPaymentView.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#user_area.views.OrderPaymentView.description" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.OrderPaymentView.detail">
+<span class="sig-name descname"><span class="pre">detail</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#user_area.views.OrderPaymentView.detail" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="user_area.views.OrderPaymentView.get_queryset">
+<span class="sig-name descname"><span class="pre">get_queryset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.OrderPaymentView.get_queryset" title="Permalink to this definition"></a></dt>
+<dd><p>Get the list of items for this view.
+This must be an iterable, and may be a queryset.
+Defaults to using <cite>self.queryset</cite>.</p>
+<p>This method should always be used rather than accessing <cite>self.queryset</cite>
+directly, as <cite>self.queryset</cite> gets evaluated only once, and those results
+are cached for all subsequent requests.</p>
+<p>You may want to override this if you need to provide different
+querysets depending on the incoming request.</p>
+<p>(Eg. return a list of items that is specific to the user)</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.OrderPaymentView.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#user_area.views.OrderPaymentView.name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.OrderPaymentView.pagination_class">
+<span class="sig-name descname"><span class="pre">pagination_class</span></span><a class="headerlink" href="#user_area.views.OrderPaymentView.pagination_class" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="../user_area.html#user_area.paginations.PageNumberAsLimitOffset" title="user_area.paginations.PageNumberAsLimitOffset"><code class="xref py py-class docutils literal notranslate"><span class="pre">PageNumberAsLimitOffset</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.OrderPaymentView.permission_classes">
+<span class="sig-name descname"><span class="pre">permission_classes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;class</span> <span class="pre">'user_area.permissions.IsAuthenticatedUser'&gt;]</span></em><a class="headerlink" href="#user_area.views.OrderPaymentView.permission_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.OrderPaymentView.queryset">
+<span class="sig-name descname"><span class="pre">queryset</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;QuerySet</span> <span class="pre">[&lt;Order:</span> <span class="pre">gh&gt;,</span> <span class="pre">&lt;Order:</span> <span class="pre">gh&gt;,</span> <span class="pre">&lt;Order:</span> <span class="pre">gh&gt;,</span> <span class="pre">&lt;Order:</span> <span class="pre">gh&gt;,</span> <span class="pre">&lt;Order:</span> <span class="pre">gh&gt;,</span> <span class="pre">&lt;Order:</span> <span class="pre">gh&gt;,</span> <span class="pre">&lt;Order:</span> <span class="pre">gh&gt;,</span> <span class="pre">&lt;Order:</span> <span class="pre">gh&gt;,</span> <span class="pre">&lt;Order:</span> <span class="pre">gh&gt;,</span> <span class="pre">&lt;Order:</span> <span class="pre">gh&gt;,</span> <span class="pre">&lt;Order:</span> <span class="pre">gh&gt;,</span> <span class="pre">&lt;Order:</span> <span class="pre">gh&gt;,</span> <span class="pre">&lt;Order:</span> <span class="pre">gh&gt;,</span> <span class="pre">&lt;Order:</span> <span class="pre">gh&gt;,</span> <span class="pre">&lt;Order:</span> <span class="pre">gh&gt;,</span> <span class="pre">&lt;Order:</span> <span class="pre">gh&gt;,</span> <span class="pre">&lt;Order:</span> <span class="pre">gh&gt;,</span> <span class="pre">&lt;Order:</span> <span class="pre">gh&gt;,</span> <span class="pre">&lt;Order:</span> <span class="pre">gh&gt;,</span> <span class="pre">&lt;Order:</span> <span class="pre">gh&gt;,</span> <span class="pre">'...(remaining</span> <span class="pre">elements</span> <span class="pre">truncated)...']&gt;</span></em><a class="headerlink" href="#user_area.views.OrderPaymentView.queryset" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.OrderPaymentView.serializer_class">
+<span class="sig-name descname"><span class="pre">serializer_class</span></span><a class="headerlink" href="#user_area.views.OrderPaymentView.serializer_class" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <a class="reference internal" href="../user_area.html#user_area.serializers.OrderSerializer" title="user_area.serializers.OrderSerializer"><code class="xref py py-class docutils literal notranslate"><span class="pre">OrderSerializer</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.OrderPaymentView.suffix">
+<span class="sig-name descname"><span class="pre">suffix</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#user_area.views.OrderPaymentView.suffix" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="user_area.views.RoleView">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">user_area.views.</span></span><span class="sig-name descname"><span class="pre">RoleView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.RoleView" title="Permalink to this definition"></a></dt>
+<dd><p>show all roles for user</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.RoleView.authentication_classes">
+<span class="sig-name descname"><span class="pre">authentication_classes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(&lt;class</span> <span class="pre">'user_area.functions.CsrfExemptSessionAuthentication'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'rest_framework.authentication.BasicAuthentication'&gt;)</span></em><a class="headerlink" href="#user_area.views.RoleView.authentication_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="user_area.views.RoleView.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.RoleView.get" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.RoleView.permission_classes">
+<span class="sig-name descname"><span class="pre">permission_classes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;class</span> <span class="pre">'user_area.permissions.AllowAnyUser'&gt;]</span></em><a class="headerlink" href="#user_area.views.RoleView.permission_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="user_area.views.UserView">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">user_area.views.</span></span><span class="sig-name descname"><span class="pre">UserView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.UserView" title="Permalink to this definition"></a></dt>
+<dd><p>check user if user login
+check user info</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.UserView.authentication_classes">
+<span class="sig-name descname"><span class="pre">authentication_classes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(&lt;class</span> <span class="pre">'user_area.functions.CsrfExemptSessionAuthentication'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'rest_framework.authentication.BasicAuthentication'&gt;)</span></em><a class="headerlink" href="#user_area.views.UserView.authentication_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="user_area.views.UserView.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.UserView.get" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.UserView.permission_classes">
+<span class="sig-name descname"><span class="pre">permission_classes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;class</span> <span class="pre">'user_area.permissions.IsAuthenticatedUser'&gt;]</span></em><a class="headerlink" href="#user_area.views.UserView.permission_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="user_area.views.UserView.permission_denied">
+<span class="sig-name descname"><span class="pre">permission_denied</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">code</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.UserView.permission_denied" title="Permalink to this definition"></a></dt>
+<dd><p>If request is not permitted, determine what kind of exception to raise.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="user_area.views.VerifyCodeView">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">user_area.views.</span></span><span class="sig-name descname"><span class="pre">VerifyCodeView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.VerifyCodeView" title="Permalink to this definition"></a></dt>
+<dd><p>Verify code for register
+Verify code for login
+Verify code for reset password</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.VerifyCodeView.authentication_classes">
+<span class="sig-name descname"><span class="pre">authentication_classes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(&lt;class</span> <span class="pre">'user_area.functions.CsrfExemptSessionAuthentication'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'rest_framework.authentication.BasicAuthentication'&gt;)</span></em><a class="headerlink" href="#user_area.views.VerifyCodeView.authentication_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.VerifyCodeView.permission_classes">
+<span class="sig-name descname"><span class="pre">permission_classes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;class</span> <span class="pre">'user_area.permissions.AllowAnyUser'&gt;]</span></em><a class="headerlink" href="#user_area.views.VerifyCodeView.permission_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="user_area.views.VerifyCodeView.post">
+<span class="sig-name descname"><span class="pre">post</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.VerifyCodeView.post" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="user_area.views.VerifyView">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">user_area.views.</span></span><span class="sig-name descname"><span class="pre">VerifyView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.VerifyView" title="Permalink to this definition"></a></dt>
+<dd><dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.VerifyView.authentication_classes">
+<span class="sig-name descname"><span class="pre">authentication_classes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(&lt;class</span> <span class="pre">'user_area.functions.CsrfExemptSessionAuthentication'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'rest_framework.authentication.BasicAuthentication'&gt;)</span></em><a class="headerlink" href="#user_area.views.VerifyView.authentication_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="user_area.views.VerifyView.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.VerifyView.get" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.VerifyView.permission_classes">
+<span class="sig-name descname"><span class="pre">permission_classes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;class</span> <span class="pre">'user_area.permissions.AllowAnyUser'&gt;]</span></em><a class="headerlink" href="#user_area.views.VerifyView.permission_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="user_area.views.VipNotifView">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">user_area.views.</span></span><span class="sig-name descname"><span class="pre">VipNotifView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.VipNotifView" title="Permalink to this definition"></a></dt>
+<dd><dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.VipNotifView.authentication_classes">
+<span class="sig-name descname"><span class="pre">authentication_classes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(&lt;class</span> <span class="pre">'user_area.functions.CsrfExemptSessionAuthentication'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'rest_framework.authentication.BasicAuthentication'&gt;)</span></em><a class="headerlink" href="#user_area.views.VipNotifView.authentication_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="user_area.views.VipNotifView.permission_classes">
+<span class="sig-name descname"><span class="pre">permission_classes</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;class</span> <span class="pre">'user_area.permissions.IsAuthenticatedUser'&gt;]</span></em><a class="headerlink" href="#user_area.views.VipNotifView.permission_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="user_area.views.VipNotifView.post">
+<span class="sig-name descname"><span class="pre">post</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_area.views.VipNotifView.post" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to villaarzan’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, shima.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+Views
+======
+
+.. automodule:: user_area.views
+   :members:
+   :undoc-members:
